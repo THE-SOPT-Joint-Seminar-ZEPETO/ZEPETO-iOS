@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		774BF66528323FDC00AA71F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF66428323FDC00AA71F1 /* AppDelegate.swift */; };
+		774BF66728323FDC00AA71F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF66628323FDC00AA71F1 /* SceneDelegate.swift */; };
+		774BF66E28323FDD00AA71F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774BF66D28323FDD00AA71F1 /* Assets.xcassets */; };
+		774BF67128323FDD00AA71F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF66F28323FDD00AA71F1 /* LaunchScreen.storyboard */; };
+		774BF67F2832438700AA71F1 /* AppContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF67E2832438700AA71F1 /* AppContentDataModel.swift */; };
+		774BF6842832440A00AA71F1 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6832832440A00AA71F1 /* BaseVC.swift */; };
+		774BF6862832443E00AA71F1 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6852832443E00AA71F1 /* Identifiers.swift */; };
+		774BF6882832446C00AA71F1 /* TVRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6872832446C00AA71F1 /* TVRegisterable.swift */; };
+		774BF68A2832448A00AA71F1 /* CVRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6892832448A00AA71F1 /* CVRegisterable.swift */; };
+		774BF68D283244D600AA71F1 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF68C283244D600AA71F1 /* UIViewController+.swift */; };
+		774BF68F2832451000AA71F1 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF68E2832451000AA71F1 /* UIView+.swift */; };
+		774BF6912832458A00AA71F1 /* BaseTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6902832458A00AA71F1 /* BaseTVC.swift */; };
+		774BF693283245B900AA71F1 /* BaseCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF692283245B900AA71F1 /* BaseCVC.swift */; };
+		774BF6952832466E00AA71F1 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6942832466E00AA71F1 /* UIButton+.swift */; };
+		774BF697283246EA00AA71F1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF696283246EA00AA71F1 /* UIColor+.swift */; };
+		774BF6992832473800AA71F1 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6982832473800AA71F1 /* UILabel+.swift */; };
+		774BF69B2832478200AA71F1 /* UITextView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF69A2832478200AA71F1 /* UITextView+.swift */; };
+		774BF69D283247CD00AA71F1 /* Adjusted+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF69C283247CD00AA71F1 /* Adjusted+.swift */; };
+		774BF69F283248C700AA71F1 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF69E283248C700AA71F1 /* NetworkResult.swift */; };
+		774BF6A12832498100AA71F1 /* Colorsets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774BF6A02832498100AA71F1 /* Colorsets.xcassets */; };
+		774BF6A928324F5000AA71F1 /* CreateMainSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF6A828324F5000AA71F1 /* CreateMainSB.storyboard */; };
+		774BF6AB28324F8000AA71F1 /* CreateMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6AA28324F8000AA71F1 /* CreateMainVC.swift */; };
+		774BF6B92832503F00AA71F1 /* FeedSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF6B82832503F00AA71F1 /* FeedSB.storyboard */; };
+		774BF6BB2832506100AA71F1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6BA2832506100AA71F1 /* FeedVC.swift */; };
+		774BF6BD2832509F00AA71F1 /* CreateUploadSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF6BC2832509F00AA71F1 /* CreateUploadSB.storyboard */; };
+		774BF6BF283250C400AA71F1 /* CreateUploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6BE283250C400AA71F1 /* CreateUploadVC.swift */; };
+		774BF6C32832524000AA71F1 /* ZepetoTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6C22832524000AA71F1 /* ZepetoTBC.swift */; };
+		774BF6C62832528F00AA71F1 /* TypeOfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6C52832528F00AA71F1 /* TypeOfViewController.swift */; };
+		774BF6C82832530D00AA71F1 /* StoryboardRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6C72832530D00AA71F1 /* StoryboardRepresentation.swift */; };
+		774BF6CA283253C900AA71F1 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6C9283253C900AA71F1 /* ViewControllerFactory.swift */; };
+		774BF6D128325B2B00AA71F1 /* HomeSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF6D028325B2B00AA71F1 /* HomeSB.storyboard */; };
+		774BF6D328325B5400AA71F1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6D228325B5400AA71F1 /* HomeVC.swift */; };
+		774BF6D528325B9D00AA71F1 /* HomeNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6D428325B9D00AA71F1 /* HomeNC.swift */; };
+		774BF6D928325C4800AA71F1 /* PlanetSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF6D828325C4800AA71F1 /* PlanetSB.storyboard */; };
+		774BF6DB28326D7800AA71F1 /* PlanetNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6DA28326D7800AA71F1 /* PlanetNC.swift */; };
+		774BF6DD28326D9600AA71F1 /* PlanetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6DC28326D9600AA71F1 /* PlanetVC.swift */; };
+		774BF6DF28326E0300AA71F1 /* CreateNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6DE28326E0300AA71F1 /* CreateNC.swift */; };
+		774BF6E128326E3900AA71F1 /* FeedNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6E028326E3900AA71F1 /* FeedNC.swift */; };
+		774BF6E528326E8100AA71F1 /* MypageSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF6E428326E8100AA71F1 /* MypageSB.storyboard */; };
+		774BF6E728326EA900AA71F1 /* MypageNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6E628326EA900AA71F1 /* MypageNC.swift */; };
+		774BF6E928326EC600AA71F1 /* MypageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6E828326EC600AA71F1 /* MypageVC.swift */; };
+		774BF6ED2832777C00AA71F1 /* UITabBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6EC2832777C00AA71F1 /* UITabBar+.swift */; };
+		89CFF3AFF7880FE9E6B68D80 /* Pods_ZEPETO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0765CD94A3577D73D39AB8E3 /* Pods-ZEPETO-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEPETO-iOS.release.xcconfig"; path = "Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZEPETO_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		774BF66128323FDC00AA71F1 /* ZEPETO-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZEPETO-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		774BF66428323FDC00AA71F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		774BF66628323FDC00AA71F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		774BF66D28323FDD00AA71F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		774BF67028323FDD00AA71F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		774BF67228323FDD00AA71F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		774BF67E2832438700AA71F1 /* AppContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentDataModel.swift; sourceTree = "<group>"; };
+		774BF6832832440A00AA71F1 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		774BF6852832443E00AA71F1 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		774BF6872832446C00AA71F1 /* TVRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRegisterable.swift; sourceTree = "<group>"; };
+		774BF6892832448A00AA71F1 /* CVRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVRegisterable.swift; sourceTree = "<group>"; };
+		774BF68C283244D600AA71F1 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		774BF68E2832451000AA71F1 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		774BF6902832458A00AA71F1 /* BaseTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTVC.swift; sourceTree = "<group>"; };
+		774BF692283245B900AA71F1 /* BaseCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCVC.swift; sourceTree = "<group>"; };
+		774BF6942832466E00AA71F1 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		774BF696283246EA00AA71F1 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		774BF6982832473800AA71F1 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		774BF69A2832478200AA71F1 /* UITextView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+.swift"; sourceTree = "<group>"; };
+		774BF69C283247CD00AA71F1 /* Adjusted+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adjusted+.swift"; sourceTree = "<group>"; };
+		774BF69E283248C700AA71F1 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		774BF6A02832498100AA71F1 /* Colorsets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colorsets.xcassets; sourceTree = "<group>"; };
+		774BF6A828324F5000AA71F1 /* CreateMainSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateMainSB.storyboard; sourceTree = "<group>"; };
+		774BF6AA28324F8000AA71F1 /* CreateMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMainVC.swift; sourceTree = "<group>"; };
+		774BF6B82832503F00AA71F1 /* FeedSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedSB.storyboard; sourceTree = "<group>"; };
+		774BF6BA2832506100AA71F1 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		774BF6BC2832509F00AA71F1 /* CreateUploadSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateUploadSB.storyboard; sourceTree = "<group>"; };
+		774BF6BE283250C400AA71F1 /* CreateUploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUploadVC.swift; sourceTree = "<group>"; };
+		774BF6C22832524000AA71F1 /* ZepetoTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZepetoTBC.swift; sourceTree = "<group>"; };
+		774BF6C52832528F00AA71F1 /* TypeOfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfViewController.swift; sourceTree = "<group>"; };
+		774BF6C72832530D00AA71F1 /* StoryboardRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRepresentation.swift; sourceTree = "<group>"; };
+		774BF6C9283253C900AA71F1 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		774BF6D028325B2B00AA71F1 /* HomeSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeSB.storyboard; sourceTree = "<group>"; };
+		774BF6D228325B5400AA71F1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		774BF6D428325B9D00AA71F1 /* HomeNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNC.swift; sourceTree = "<group>"; };
+		774BF6D828325C4800AA71F1 /* PlanetSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlanetSB.storyboard; sourceTree = "<group>"; };
+		774BF6DA28326D7800AA71F1 /* PlanetNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNC.swift; sourceTree = "<group>"; };
+		774BF6DC28326D9600AA71F1 /* PlanetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetVC.swift; sourceTree = "<group>"; };
+		774BF6DE28326E0300AA71F1 /* CreateNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNC.swift; sourceTree = "<group>"; };
+		774BF6E028326E3900AA71F1 /* FeedNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedNC.swift; sourceTree = "<group>"; };
+		774BF6E428326E8100AA71F1 /* MypageSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MypageSB.storyboard; sourceTree = "<group>"; };
+		774BF6E628326EA900AA71F1 /* MypageNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageNC.swift; sourceTree = "<group>"; };
+		774BF6E828326EC600AA71F1 /* MypageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageVC.swift; sourceTree = "<group>"; };
+		774BF6EC2832777C00AA71F1 /* UITabBar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+.swift"; sourceTree = "<group>"; };
+		A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEPETO-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		774BF65E28323FDC00AA71F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CFF3AFF7880FE9E6B68D80 /* Pods_ZEPETO_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		774BF65828323FDC00AA71F1 = {
+			isa = PBXGroup;
+			children = (
+				774BF66328323FDC00AA71F1 /* ZEPETO-iOS */,
+				774BF66228323FDC00AA71F1 /* Products */,
+				8F532EE8DA44D29676BB1B41 /* Pods */,
+				8F1B7AB4752BF63D9B274AC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		774BF66228323FDC00AA71F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				774BF66128323FDC00AA71F1 /* ZEPETO-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		774BF66328323FDC00AA71F1 /* ZEPETO-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6782832416300AA71F1 /* Global */,
+				774BF67B283241D400AA71F1 /* Network */,
+				774BF67A2832418800AA71F1 /* Screen */,
+				774BF6792832417700AA71F1 /* Support */,
+			);
+			path = "ZEPETO-iOS";
+			sourceTree = "<group>";
+		};
+		774BF6782832416300AA71F1 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				774BF67C2832436300AA71F1 /* PublicData */,
+				774BF6C42832526F00AA71F1 /* Factory */,
+				774BF6802832439F00AA71F1 /* Class */,
+				774BF681283243B300AA71F1 /* Struct */,
+				774BF682283243B900AA71F1 /* Protocol */,
+				774BF68B283244AA00AA71F1 /* Extension */,
+				774BF66F28323FDD00AA71F1 /* LaunchScreen.storyboard */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		774BF6792832417700AA71F1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				774BF66428323FDC00AA71F1 /* AppDelegate.swift */,
+				774BF66628323FDC00AA71F1 /* SceneDelegate.swift */,
+				774BF67228323FDD00AA71F1 /* Info.plist */,
+				774BF66D28323FDD00AA71F1 /* Assets.xcassets */,
+				774BF6A02832498100AA71F1 /* Colorsets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		774BF67A2832418800AA71F1 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6C02832520C00AA71F1 /* TabBar */,
+				774BF6CD2832565E00AA71F1 /* Home */,
+				774BF6CB2832562800AA71F1 /* Planet */,
+				774BF6A228324E2100AA71F1 /* CreateMain */,
+				774BF6A428324E7100AA71F1 /* CreateUpload */,
+				774BF6A328324E2D00AA71F1 /* Feed */,
+				774BF6CC2832564B00AA71F1 /* Mypage */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		774BF67B283241D400AA71F1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				774BF69E283248C700AA71F1 /* NetworkResult.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		774BF67C2832436300AA71F1 /* PublicData */ = {
+			isa = PBXGroup;
+			children = (
+				774BF67D2832437000AA71F1 /* AppModel */,
+			);
+			path = PublicData;
+			sourceTree = "<group>";
+		};
+		774BF67D2832437000AA71F1 /* AppModel */ = {
+			isa = PBXGroup;
+			children = (
+				774BF67E2832438700AA71F1 /* AppContentDataModel.swift */,
+			);
+			path = AppModel;
+			sourceTree = "<group>";
+		};
+		774BF6802832439F00AA71F1 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6832832440A00AA71F1 /* BaseVC.swift */,
+				774BF6902832458A00AA71F1 /* BaseTVC.swift */,
+				774BF692283245B900AA71F1 /* BaseCVC.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		774BF681283243B300AA71F1 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6852832443E00AA71F1 /* Identifiers.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		774BF682283243B900AA71F1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6872832446C00AA71F1 /* TVRegisterable.swift */,
+				774BF6892832448A00AA71F1 /* CVRegisterable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		774BF68B283244AA00AA71F1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				774BF68C283244D600AA71F1 /* UIViewController+.swift */,
+				774BF68E2832451000AA71F1 /* UIView+.swift */,
+				774BF6942832466E00AA71F1 /* UIButton+.swift */,
+				774BF696283246EA00AA71F1 /* UIColor+.swift */,
+				774BF6982832473800AA71F1 /* UILabel+.swift */,
+				774BF69A2832478200AA71F1 /* UITextView+.swift */,
+				774BF69C283247CD00AA71F1 /* Adjusted+.swift */,
+				774BF6EC2832777C00AA71F1 /* UITabBar+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		774BF6A228324E2100AA71F1 /* CreateMain */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6A528324EF000AA71F1 /* SB */,
+				774BF6A628324EFE00AA71F1 /* VC */,
+			);
+			path = CreateMain;
+			sourceTree = "<group>";
+		};
+		774BF6A328324E2D00AA71F1 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6B528324FF600AA71F1 /* SB */,
+				774BF6B62832502000AA71F1 /* VC */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		774BF6A428324E7100AA71F1 /* CreateUpload */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6B228324FDB00AA71F1 /* SB */,
+				774BF6B328324FE000AA71F1 /* VC */,
+			);
+			path = CreateUpload;
+			sourceTree = "<group>";
+		};
+		774BF6A528324EF000AA71F1 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6A828324F5000AA71F1 /* CreateMainSB.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		774BF6A628324EFE00AA71F1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6AA28324F8000AA71F1 /* CreateMainVC.swift */,
+				774BF6DE28326E0300AA71F1 /* CreateNC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		774BF6B228324FDB00AA71F1 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6BC2832509F00AA71F1 /* CreateUploadSB.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		774BF6B328324FE000AA71F1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6BE283250C400AA71F1 /* CreateUploadVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		774BF6B528324FF600AA71F1 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6B82832503F00AA71F1 /* FeedSB.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		774BF6B62832502000AA71F1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6BA2832506100AA71F1 /* FeedVC.swift */,
+				774BF6E028326E3900AA71F1 /* FeedNC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		774BF6C02832520C00AA71F1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6C12832521800AA71F1 /* VC */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		774BF6C12832521800AA71F1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6C22832524000AA71F1 /* ZepetoTBC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		774BF6C42832526F00AA71F1 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6C52832528F00AA71F1 /* TypeOfViewController.swift */,
+				774BF6C72832530D00AA71F1 /* StoryboardRepresentation.swift */,
+				774BF6C9283253C900AA71F1 /* ViewControllerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		774BF6CB2832562800AA71F1 /* Planet */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6D628325C2600AA71F1 /* SB */,
+				774BF6D728325C2C00AA71F1 /* VC */,
+			);
+			path = Planet;
+			sourceTree = "<group>";
+		};
+		774BF6CC2832564B00AA71F1 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6E228326E6300AA71F1 /* SB */,
+				774BF6E328326E6D00AA71F1 /* VC */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		774BF6CD2832565E00AA71F1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6CE28325B1400AA71F1 /* SB */,
+				774BF6CF28325B1A00AA71F1 /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		774BF6CE28325B1400AA71F1 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6D028325B2B00AA71F1 /* HomeSB.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		774BF6CF28325B1A00AA71F1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6D228325B5400AA71F1 /* HomeVC.swift */,
+				774BF6D428325B9D00AA71F1 /* HomeNC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		774BF6D628325C2600AA71F1 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6D828325C4800AA71F1 /* PlanetSB.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		774BF6D728325C2C00AA71F1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6DA28326D7800AA71F1 /* PlanetNC.swift */,
+				774BF6DC28326D9600AA71F1 /* PlanetVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		774BF6E228326E6300AA71F1 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6E428326E8100AA71F1 /* MypageSB.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		774BF6E328326E6D00AA71F1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				774BF6E628326EA900AA71F1 /* MypageNC.swift */,
+				774BF6E828326EC600AA71F1 /* MypageVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8F1B7AB4752BF63D9B274AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F532EE8DA44D29676BB1B41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */,
+				0765CD94A3577D73D39AB8E3 /* Pods-ZEPETO-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		774BF66028323FDC00AA71F1 /* ZEPETO-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 774BF67528323FDD00AA71F1 /* Build configuration list for PBXNativeTarget "ZEPETO-iOS" */;
+			buildPhases = (
+				3F831D1FA3F40B5CB23F8659 /* [CP] Check Pods Manifest.lock */,
+				774BF65D28323FDC00AA71F1 /* Sources */,
+				774BF65E28323FDC00AA71F1 /* Frameworks */,
+				774BF65F28323FDC00AA71F1 /* Resources */,
+				A6BD4809E837DFF377CD28BC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZEPETO-iOS";
+			productName = "ZEPETO-iOS";
+			productReference = 774BF66128323FDC00AA71F1 /* ZEPETO-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		774BF65928323FDC00AA71F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					774BF66028323FDC00AA71F1 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 774BF65C28323FDC00AA71F1 /* Build configuration list for PBXProject "ZEPETO-iOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 774BF65828323FDC00AA71F1;
+			productRefGroup = 774BF66228323FDC00AA71F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				774BF66028323FDC00AA71F1 /* ZEPETO-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		774BF65F28323FDC00AA71F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				774BF6D928325C4800AA71F1 /* PlanetSB.storyboard in Resources */,
+				774BF6A12832498100AA71F1 /* Colorsets.xcassets in Resources */,
+				774BF67128323FDD00AA71F1 /* LaunchScreen.storyboard in Resources */,
+				774BF66E28323FDD00AA71F1 /* Assets.xcassets in Resources */,
+				774BF6BD2832509F00AA71F1 /* CreateUploadSB.storyboard in Resources */,
+				774BF6E528326E8100AA71F1 /* MypageSB.storyboard in Resources */,
+				774BF6A928324F5000AA71F1 /* CreateMainSB.storyboard in Resources */,
+				774BF6D128325B2B00AA71F1 /* HomeSB.storyboard in Resources */,
+				774BF6B92832503F00AA71F1 /* FeedSB.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F831D1FA3F40B5CB23F8659 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZEPETO-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6BD4809E837DFF377CD28BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		774BF65D28323FDC00AA71F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				774BF6DF28326E0300AA71F1 /* CreateNC.swift in Sources */,
+				774BF6E128326E3900AA71F1 /* FeedNC.swift in Sources */,
+				774BF68A2832448A00AA71F1 /* CVRegisterable.swift in Sources */,
+				774BF6C62832528F00AA71F1 /* TypeOfViewController.swift in Sources */,
+				774BF6ED2832777C00AA71F1 /* UITabBar+.swift in Sources */,
+				774BF6BB2832506100AA71F1 /* FeedVC.swift in Sources */,
+				774BF6882832446C00AA71F1 /* TVRegisterable.swift in Sources */,
+				774BF69F283248C700AA71F1 /* NetworkResult.swift in Sources */,
+				774BF66528323FDC00AA71F1 /* AppDelegate.swift in Sources */,
+				774BF6912832458A00AA71F1 /* BaseTVC.swift in Sources */,
+				774BF6BF283250C400AA71F1 /* CreateUploadVC.swift in Sources */,
+				774BF6C32832524000AA71F1 /* ZepetoTBC.swift in Sources */,
+				774BF69B2832478200AA71F1 /* UITextView+.swift in Sources */,
+				774BF68F2832451000AA71F1 /* UIView+.swift in Sources */,
+				774BF66728323FDC00AA71F1 /* SceneDelegate.swift in Sources */,
+				774BF69D283247CD00AA71F1 /* Adjusted+.swift in Sources */,
+				774BF6952832466E00AA71F1 /* UIButton+.swift in Sources */,
+				774BF68D283244D600AA71F1 /* UIViewController+.swift in Sources */,
+				774BF6CA283253C900AA71F1 /* ViewControllerFactory.swift in Sources */,
+				774BF6D328325B5400AA71F1 /* HomeVC.swift in Sources */,
+				774BF6AB28324F8000AA71F1 /* CreateMainVC.swift in Sources */,
+				774BF67F2832438700AA71F1 /* AppContentDataModel.swift in Sources */,
+				774BF6862832443E00AA71F1 /* Identifiers.swift in Sources */,
+				774BF6842832440A00AA71F1 /* BaseVC.swift in Sources */,
+				774BF6E928326EC600AA71F1 /* MypageVC.swift in Sources */,
+				774BF6992832473800AA71F1 /* UILabel+.swift in Sources */,
+				774BF6C82832530D00AA71F1 /* StoryboardRepresentation.swift in Sources */,
+				774BF693283245B900AA71F1 /* BaseCVC.swift in Sources */,
+				774BF697283246EA00AA71F1 /* UIColor+.swift in Sources */,
+				774BF6DB28326D7800AA71F1 /* PlanetNC.swift in Sources */,
+				774BF6E728326EA900AA71F1 /* MypageNC.swift in Sources */,
+				774BF6D528325B9D00AA71F1 /* HomeNC.swift in Sources */,
+				774BF6DD28326D9600AA71F1 /* PlanetVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		774BF66F28323FDD00AA71F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				774BF67028323FDD00AA71F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		774BF67328323FDD00AA71F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		774BF67428323FDD00AA71F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		774BF67628323FDD00AA71F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 397WA8BG8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ZEPETO-iOS/Support/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eunju.ZEPETO-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		774BF67728323FDD00AA71F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0765CD94A3577D73D39AB8E3 /* Pods-ZEPETO-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 397WA8BG8W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ZEPETO-iOS/Support/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eunju.ZEPETO-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		774BF65C28323FDC00AA71F1 /* Build configuration list for PBXProject "ZEPETO-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				774BF67328323FDD00AA71F1 /* Debug */,
+				774BF67428323FDD00AA71F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		774BF67528323FDD00AA71F1 /* Build configuration list for PBXNativeTarget "ZEPETO-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				774BF67628323FDD00AA71F1 /* Debug */,
+				774BF67728323FDD00AA71F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 774BF65928323FDC00AA71F1 /* Project object */;
+}

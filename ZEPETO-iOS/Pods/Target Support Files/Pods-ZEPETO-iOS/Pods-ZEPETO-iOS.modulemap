@@ -1,0 +1,6 @@
+framework module Pods_ZEPETO_iOS {
+  umbrella header "Pods-ZEPETO-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
