@@ -13,9 +13,12 @@
 		774BF66C28323FDC00AA71F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF66A28323FDC00AA71F1 /* Main.storyboard */; };
 		774BF66E28323FDD00AA71F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774BF66D28323FDD00AA71F1 /* Assets.xcassets */; };
 		774BF67128323FDD00AA71F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF66F28323FDD00AA71F1 /* LaunchScreen.storyboard */; };
+		89CFF3AFF7880FE9E6B68D80 /* Pods_ZEPETO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0765CD94A3577D73D39AB8E3 /* Pods-ZEPETO-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEPETO-iOS.release.xcconfig"; path = "Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZEPETO_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		774BF66128323FDC00AA71F1 /* ZEPETO-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZEPETO-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		774BF66428323FDC00AA71F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774BF66628323FDC00AA71F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		774BF66D28323FDD00AA71F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		774BF67028323FDD00AA71F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		774BF67228323FDD00AA71F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEPETO-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CFF3AFF7880FE9E6B68D80 /* Pods_ZEPETO_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				774BF66328323FDC00AA71F1 /* ZEPETO-iOS */,
 				774BF66228323FDC00AA71F1 /* Products */,
+				8F532EE8DA44D29676BB1B41 /* Pods */,
+				8F1B7AB4752BF63D9B274AC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +63,10 @@
 		774BF66328323FDC00AA71F1 /* ZEPETO-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				774BF6782832416300AA71F1 /* Global */,
+				774BF67B283241D400AA71F1 /* Network */,
+				774BF67A2832418800AA71F1 /* Screen */,
+				774BF6792832417700AA71F1 /* Support */,
 				774BF66428323FDC00AA71F1 /* AppDelegate.swift */,
 				774BF66628323FDC00AA71F1 /* SceneDelegate.swift */,
 				774BF66828323FDC00AA71F1 /* ViewController.swift */,
@@ -67,6 +78,52 @@
 			path = "ZEPETO-iOS";
 			sourceTree = "<group>";
 		};
+		774BF6782832416300AA71F1 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		774BF6792832417700AA71F1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		774BF67A2832418800AA71F1 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		774BF67B283241D400AA71F1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8F1B7AB4752BF63D9B274AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F532EE8DA44D29676BB1B41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */,
+				0765CD94A3577D73D39AB8E3 /* Pods-ZEPETO-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 774BF67528323FDD00AA71F1 /* Build configuration list for PBXNativeTarget "ZEPETO-iOS" */;
 			buildPhases = (
+				3F831D1FA3F40B5CB23F8659 /* [CP] Check Pods Manifest.lock */,
 				774BF65D28323FDC00AA71F1 /* Sources */,
 				774BF65E28323FDC00AA71F1 /* Frameworks */,
 				774BF65F28323FDC00AA71F1 /* Resources */,
+				A6BD4809E837DFF377CD28BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +191,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F831D1FA3F40B5CB23F8659 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZEPETO-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6BD4809E837DFF377CD28BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		774BF65D28323FDC00AA71F1 /* Sources */ = {
@@ -282,6 +383,7 @@
 		};
 		774BF67628323FDD00AA71F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +412,7 @@
 		};
 		774BF67728323FDD00AA71F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0765CD94A3577D73D39AB8E3 /* Pods-ZEPETO-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
