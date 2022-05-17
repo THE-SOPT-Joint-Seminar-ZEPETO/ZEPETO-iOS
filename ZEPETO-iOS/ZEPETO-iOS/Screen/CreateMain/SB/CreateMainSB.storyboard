@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -58,129 +59,53 @@
                                     <constraint firstItem="UoZ-oP-soW" firstAttribute="centerY" secondItem="EFH-p2-Wd4" secondAttribute="centerY" id="r87-q4-P5I"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dX8-tP-ea3">
-                                <rect key="frame" x="0.0" y="103" width="375" height="675"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="ipO-hs-SKb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AKI-Qb-bIh">
-                                            <rect key="frame" x="18" y="14" width="385" height="32"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUr-m0-mn2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="49" height="32"/>
-                                                    <color key="backgroundColor" name="gray100"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
-                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="MY">
-                                                        <color key="titleColor" name="gray900"/>
-                                                    </state>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <real key="value" value="15.984"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obq-CF-cmn">
-                                                    <rect key="frame" x="57" y="0.0" width="57" height="32"/>
-                                                    <color key="backgroundColor" name="gray900"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
-                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="HOT">
-                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </state>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <real key="value" value="15.984"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msX-AU-Dji">
-                                                    <rect key="frame" x="122" y="0.0" width="59" height="32"/>
-                                                    <color key="backgroundColor" name="gray100"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
-                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="NEW">
-                                                        <color key="titleColor" name="gray900"/>
-                                                    </state>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <real key="value" value="15.984"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYK-rl-BTD">
-                                                    <rect key="frame" x="189" y="0.0" width="62" height="32"/>
-                                                    <color key="backgroundColor" name="gray100"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
-                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="템플릿">
-                                                        <color key="titleColor" name="gray900"/>
-                                                    </state>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <real key="value" value="15.984"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXK-Pm-bjH">
-                                                    <rect key="frame" x="259" y="0.0" width="51" height="32"/>
-                                                    <color key="backgroundColor" name="gray100"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
-                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="커플">
-                                                        <color key="titleColor" name="gray900"/>
-                                                    </state>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <real key="value" value="15.984"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gE4-Xg-kQC">
-                                                    <rect key="frame" x="318" y="0.0" width="67" height="32"/>
-                                                    <color key="backgroundColor" name="gray100"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
-                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" title="Photo">
-                                                        <color key="titleColor" name="gray900"/>
-                                                    </state>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <real key="value" value="15.984"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </button>
-                                            </subviews>
-                                        </stackView>
-                                    </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <constraints>
-                                        <constraint firstItem="AKI-Qb-bIh" firstAttribute="leading" secondItem="ipO-hs-SKb" secondAttribute="leading" constant="18" id="ejA-vZ-IY5"/>
-                                        <constraint firstItem="AKI-Qb-bIh" firstAttribute="centerY" secondItem="ipO-hs-SKb" secondAttribute="centerY" id="kRh-QQ-iR6"/>
-                                    </constraints>
-                                </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dX8-tP-ea3">
+                                <rect key="frame" x="0.0" y="163" width="375" height="615"/>
                             </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hHQ-Tv-Vg3">
+                                <rect key="frame" x="0.0" y="103" width="375" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pGN-aJ-vce"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WaI-wC-GPy">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZSi-EH-80R">
+                                        <rect key="frame" x="0.0" y="-34" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LOT-KL-Z3c">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dX8-tP-ea3" firstAttribute="top" secondItem="EFH-p2-Wd4" secondAttribute="bottom" id="7gw-cg-Wdl"/>
+                            <constraint firstItem="hHQ-Tv-Vg3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4c5-3s-dUE"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dX8-tP-ea3" secondAttribute="bottom" id="BYE-kd-zNQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hHQ-Tv-Vg3" secondAttribute="trailing" id="C2e-7j-wJd"/>
+                            <constraint firstItem="hHQ-Tv-Vg3" firstAttribute="top" secondItem="EFH-p2-Wd4" secondAttribute="bottom" id="Dip-eF-Slq"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dX8-tP-ea3" secondAttribute="trailing" id="NTR-qb-iwz"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EFH-p2-Wd4" secondAttribute="trailing" id="XaI-3E-ldS"/>
                             <constraint firstItem="dX8-tP-ea3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cbR-hZ-knj"/>
                             <constraint firstItem="EFH-p2-Wd4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="g5X-9S-KuP"/>
+                            <constraint firstItem="dX8-tP-ea3" firstAttribute="top" secondItem="hHQ-Tv-Vg3" secondAttribute="bottom" id="stk-AG-W7p"/>
                             <constraint firstItem="EFH-p2-Wd4" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="47" id="vx2-rH-3T9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="k6q-Ow-TdF"/>
+                    <connections>
+                        <outlet property="categoryCV" destination="hHQ-Tv-Vg3" id="Hr4-ww-YRS"/>
+                        <outlet property="postTV" destination="dX8-tP-ea3" id="5od-7B-Uy7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,12 +135,6 @@
         <image name="icSearchLine" width="24" height="24"/>
         <namedColor name="gay800">
             <color red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="gray100">
-            <color red="0.95686274509803926" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="gray900">
-            <color red="0.16078431372549021" green="0.16078431372549021" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
