@@ -36,6 +36,7 @@ extension CreateMainVC {
         postTV.dataSource = self
     }
     
+    /// 카테고리 CV 관련 설정하는 메서드
     private func setCategoryCV() {
         let nib = UINib(nibName: CategoryCVC.className, bundle: nil)
         categoryCV.register(nib, forCellWithReuseIdentifier: CategoryCVC.className)
@@ -48,7 +49,8 @@ extension CreateMainVC {
 // MARK: - UITableViewDelegate
 extension CreateMainVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+//        return UITableView.automaticDimension
+        return 268
     }
 }
 
@@ -85,6 +87,7 @@ extension CreateMainVC: UICollectionViewDataSource {
             cell.categoryBtn.setTitleColor(.white, for: .normal)
             cell.categoryBtn.setBackgroundColor(.gray900, for: .normal)
         }
+        
         return cell
     }
 }
@@ -92,16 +95,11 @@ extension CreateMainVC: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension CreateMainVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width
-        
-        let cellWidth = width * (47/375)
-        let cellHeight = cellWidth * (32/176)
-        
-        return CGSize(width: cellWidth, height: cellHeight)
+        return CGSize(width: categoryList[indexPath.item].size(withAttributes: nil).width + 28, height: 32)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 14, left: 18, bottom: 14, right: 0)
+        return UIEdgeInsets(top: 14, left: 18, bottom: 14, right: 18)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
