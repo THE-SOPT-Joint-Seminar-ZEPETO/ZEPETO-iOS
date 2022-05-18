@@ -80,9 +80,9 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="pRD-ih-S60" secondAttribute="trailing" id="292-4v-g2D"/>
                     <constraint firstAttribute="trailing" secondItem="ecU-NW-Dma" secondAttribute="trailing" id="7kx-Et-UYR"/>
-                    <constraint firstItem="ecU-NW-Dma" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ASw-FI-YDH"/>
                     <constraint firstItem="pRD-ih-S60" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EKF-vS-ZOm"/>
                     <constraint firstItem="ecU-NW-Dma" firstAttribute="top" secondItem="pRD-ih-S60" secondAttribute="bottom" id="Igq-c7-IVf"/>
+                    <constraint firstItem="ecU-NW-Dma" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NzG-5a-0ZL"/>
                     <constraint firstItem="pRD-ih-S60" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bme-Ok-OT7"/>
                     <constraint firstAttribute="bottom" secondItem="ecU-NW-Dma" secondAttribute="bottom" constant="14" id="zPz-Qw-aKf"/>
                 </constraints>
