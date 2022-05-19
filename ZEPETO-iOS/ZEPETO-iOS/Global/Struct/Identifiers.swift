@@ -11,6 +11,7 @@ struct Identifiers {
     static let Main = "Main"
     static let HomeSB = "HomeSB"
     static let PlanetSB = "PlanetSB"
+    static let CreateEditSB = "CreateEditSB"
     static let CreateMainSB = "CreateMainSB"
     static let CreateUploadSB = "CreateUploadSB"
     static let FeedSB = "FeedSB"
