@@ -1,17 +1,17 @@
 {
   "images" : [
     {
+      "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "icDownloadLine.png",
-      "idiom" : "universal"
+      "filename" : "icSmileLine.png"
     },
     {
       "idiom" : "universal",
-      "filename" : "icDownloadLine@2x.png",
+      "filename" : "icSmileLine@2x.png",
       "scale" : "2x"
     },
     {
-      "filename" : "icDownloadLine@3x.png",
+      "filename" : "icSmileLine@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
