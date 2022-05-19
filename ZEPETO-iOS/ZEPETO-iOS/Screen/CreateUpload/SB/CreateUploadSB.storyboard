@@ -290,6 +290,17 @@
                                     <constraint firstAttribute="height" constant="58" id="mzc-TH-Ace"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQb-TK-w9n">
+                                <rect key="frame" x="18" y="702" width="339" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="nBz-15-keh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="완료">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <color key="baseBackgroundColor" name="point"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -298,13 +309,16 @@
                             <constraint firstItem="DGK-NN-Vr2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="AZR-oN-wCK"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oqm-S7-22c" secondAttribute="trailing" id="B7v-MC-TAb"/>
                             <constraint firstItem="R3j-Xb-Q5c" firstAttribute="top" secondItem="MlI-zI-KdZ" secondAttribute="bottom" constant="10" id="E0a-Ys-3p4"/>
+                            <constraint firstItem="rQb-TK-w9n" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="GLg-Lm-kyi"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kyx-CW-ecv" secondAttribute="trailing" constant="18" id="J1q-99-sfs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rQb-TK-w9n" secondAttribute="trailing" constant="18" id="Kxm-go-MHY"/>
                             <constraint firstItem="tAx-zT-4vF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="O3z-Hi-7xS"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tAx-zT-4vF" secondAttribute="trailing" id="QLk-U1-h9X"/>
                             <constraint firstItem="R3j-Xb-Q5c" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="18" id="Rm2-3v-oE6"/>
                             <constraint firstItem="oqm-S7-22c" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="T6R-qb-KEv"/>
                             <constraint firstItem="kyx-CW-ecv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="UsX-sE-5Mp"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DGK-NN-Vr2" secondAttribute="trailing" id="YHQ-jh-PdH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rQb-TK-w9n" secondAttribute="bottom" constant="20" id="aRf-8m-3ld"/>
                             <constraint firstItem="MlI-zI-KdZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ezq-u0-srv"/>
                             <constraint firstItem="DGK-NN-Vr2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="f3w-2y-O1Q"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MlI-zI-KdZ" secondAttribute="trailing" id="nqy-yu-QVO"/>
