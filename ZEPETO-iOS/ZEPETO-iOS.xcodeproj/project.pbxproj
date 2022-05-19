@@ -49,6 +49,8 @@
 		774BF6E728326EA900AA71F1 /* MypageNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6E628326EA900AA71F1 /* MypageNC.swift */; };
 		774BF6E928326EC600AA71F1 /* MypageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6E828326EC600AA71F1 /* MypageVC.swift */; };
 		774BF6ED2832777C00AA71F1 /* UITabBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6EC2832777C00AA71F1 /* UITabBar+.swift */; };
+		84DB19632836434600F15BF3 /* CreateEditSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DB19622836434600F15BF3 /* CreateEditSB.storyboard */; };
+		84DB19652836435C00F15BF3 /* CreateEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB19642836435C00F15BF3 /* CreateEditVC.swift */; };
 		89CFF3AFF7880FE9E6B68D80 /* Pods_ZEPETO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +101,8 @@
 		774BF6E628326EA900AA71F1 /* MypageNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageNC.swift; sourceTree = "<group>"; };
 		774BF6E828326EC600AA71F1 /* MypageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageVC.swift; sourceTree = "<group>"; };
 		774BF6EC2832777C00AA71F1 /* UITabBar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+.swift"; sourceTree = "<group>"; };
+		84DB19622836434600F15BF3 /* CreateEditSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEditSB.storyboard; sourceTree = "<group>"; };
+		84DB19642836435C00F15BF3 /* CreateEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditVC.swift; sourceTree = "<group>"; };
 		A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEPETO-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +179,7 @@
 				774BF6C02832520C00AA71F1 /* TabBar */,
 				774BF6CD2832565E00AA71F1 /* Home */,
 				774BF6CB2832562800AA71F1 /* Planet */,
+				84DB195F283642D400F15BF3 /* CreateEdit */,
 				774BF6A228324E2100AA71F1 /* CreateMain */,
 				774BF6A428324E7100AA71F1 /* CreateUpload */,
 				774BF6A328324E2D00AA71F1 /* Feed */,
@@ -430,6 +435,31 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		84DB195F283642D400F15BF3 /* CreateEdit */ = {
+			isa = PBXGroup;
+			children = (
+				84DB1960283642DB00F15BF3 /* SV */,
+				84DB1961283642E000F15BF3 /* VC */,
+			);
+			path = CreateEdit;
+			sourceTree = "<group>";
+		};
+		84DB1960283642DB00F15BF3 /* SV */ = {
+			isa = PBXGroup;
+			children = (
+				84DB19622836434600F15BF3 /* CreateEditSB.storyboard */,
+			);
+			path = SV;
+			sourceTree = "<group>";
+		};
+		84DB1961283642E000F15BF3 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				84DB19642836435C00F15BF3 /* CreateEditVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		8F1B7AB4752BF63D9B274AC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +542,7 @@
 				774BF67128323FDD00AA71F1 /* LaunchScreen.storyboard in Resources */,
 				774BF66E28323FDD00AA71F1 /* Assets.xcassets in Resources */,
 				774BF6BD2832509F00AA71F1 /* CreateUploadSB.storyboard in Resources */,
+				84DB19632836434600F15BF3 /* CreateEditSB.storyboard in Resources */,
 				774BF6E528326E8100AA71F1 /* MypageSB.storyboard in Resources */,
 				774BF6A928324F5000AA71F1 /* CreateMainSB.storyboard in Resources */,
 				774BF6D128325B2B00AA71F1 /* HomeSB.storyboard in Resources */,
@@ -568,6 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DB19652836435C00F15BF3 /* CreateEditVC.swift in Sources */,
 				774BF6DF28326E0300AA71F1 /* CreateNC.swift in Sources */,
 				774BF6E128326E3900AA71F1 /* FeedNC.swift in Sources */,
 				774BF68A2832448A00AA71F1 /* CVRegisterable.swift in Sources */,
