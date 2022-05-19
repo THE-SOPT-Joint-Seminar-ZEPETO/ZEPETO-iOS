@@ -12,7 +12,7 @@
         <!--Create UploadVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController restorationIdentifier="CreateUploadSB" storyboardIdentifier="CreateUploadSB" id="Y6W-OH-hqX" customClass="CreateUploadVC" customModule="ZEPETO_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateUploadVC" id="Y6W-OH-hqX" customClass="CreateUploadVC" customModule="ZEPETO_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,6 +63,11 @@
                                             <constraint firstAttribute="width" constant="82" id="F1C-MR-gTv"/>
                                             <constraint firstAttribute="height" constant="110" id="vzo-wP-ceq"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8u-Mp-zIj">
                                         <rect key="frame" x="16" y="100" width="74" height="26"/>
@@ -90,6 +95,11 @@
                                             <constraint firstItem="hi9-zR-h5P" firstAttribute="leading" secondItem="F8u-Mp-zIj" secondAttribute="leading" constant="9" id="IAm-CV-29g"/>
                                             <constraint firstItem="hwt-Jl-bir" firstAttribute="centerY" secondItem="F8u-Mp-zIj" secondAttribute="centerY" id="zJ5-a3-wm5"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -331,7 +341,7 @@
                     <connections>
                         <outlet property="hashTagView" destination="F8u-Mp-zIj" id="GcS-Ox-TSX"/>
                         <outlet property="mainImgView" destination="gzK-cT-wtS" id="aa4-zC-hcP"/>
-                        <outlet property="mainTextView" destination="sFs-R3-RBX" id="oOf-kP-AOZ"/>
+                        <outlet property="mainTextView" destination="sFs-R3-RBX" id="MbF-IK-0fi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
