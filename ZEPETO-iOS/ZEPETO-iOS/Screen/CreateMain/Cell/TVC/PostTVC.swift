@@ -35,7 +35,7 @@ extension PostTVC {
         imgList = postData.imgList
     }
     
-    func setImgCV() {
+    private func setImgCV() {
         let nib = UINib(nibName: ImgCVC.className, bundle: nil)
         imgCV.register(nib, forCellWithReuseIdentifier: ImgCVC.className)
         imgCV.delegate = self
