@@ -15,6 +15,8 @@ class CreateEditVC: BaseVC {
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setImg()
     }
 
     // MARK: IBAction
@@ -30,5 +32,7 @@ class CreateEditVC: BaseVC {
 // MARK: - Custom Methods
 extension CreateEditVC {
     private func setImg() {
+        // TODO: 받아온 이미지로 적용
+        img.image = UIImage(named: "image")
     }
 }
