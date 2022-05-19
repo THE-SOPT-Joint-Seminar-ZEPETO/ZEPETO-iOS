@@ -12,7 +12,7 @@ class CreateMainVC: BaseVC {
     // MARK: IBOutlet
     @IBOutlet weak var postTV: UITableView!
     @IBOutlet weak var categoryCV: UICollectionView!
-
+    
     // MARK: Properties
     var categoryList = ["MY", "HOT", "NEW", "템플릿", "커플", "Photo"]
     let imagePicker = UIImagePickerController()
@@ -124,12 +124,10 @@ extension CreateMainVC: UICollectionViewDelegateFlowLayout {
 
 // MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
 extension CreateMainVC : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-    //TODO: 다음 VC에서 이미지 띄워주기
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
-            
-           // 다음 VC로 이미지 전달
+            //TODO: 다음 VC에서 이미지 띄워주기
         }
         dismiss(animated: true)
     }
