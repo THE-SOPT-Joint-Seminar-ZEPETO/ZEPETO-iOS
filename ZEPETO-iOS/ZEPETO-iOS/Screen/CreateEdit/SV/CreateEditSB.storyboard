@@ -117,26 +117,23 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="du6-si-s3h">
-                                <rect key="frame" x="0.0" y="260.5" width="414" height="375"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="375" id="NjD-60-kCd"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="du6-si-s3h" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6z1-kJ-4Mw"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gCy-0G-4qG" secondAttribute="bottom" constant="26" id="AYh-hS-aFx"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FKX-OG-eRn" secondAttribute="trailing" constant="18" id="DcI-lq-Zq3"/>
                             <constraint firstItem="gCy-0G-4qG" firstAttribute="leading" secondItem="5sa-RR-TRs" secondAttribute="trailing" constant="25.5" id="JFg-Qm-zWg"/>
-                            <constraint firstItem="du6-si-s3h" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="K1C-wN-7Qf"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="du6-si-s3h" secondAttribute="trailing" id="Ke9-hN-4lS"/>
                             <constraint firstItem="5sa-RR-TRs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Qss-Ej-Wue"/>
                             <constraint firstItem="9Ia-Og-lXu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="TAW-Dh-v6q"/>
+                            <constraint firstItem="du6-si-s3h" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="VFx-Ca-lEL"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="5sa-RR-TRs" secondAttribute="bottom" constant="26" id="ZOq-BS-SA3"/>
                             <constraint firstItem="9Ia-Og-lXu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="cKo-Ug-ELb"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TI4-IL-fu4" secondAttribute="bottom" constant="28" id="eof-Py-rr8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="du6-si-s3h" secondAttribute="bottom" id="fZ8-Ao-Y7y"/>
                             <constraint firstItem="FKX-OG-eRn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="19" id="s6y-WD-z0G"/>
                             <constraint firstItem="du6-si-s3h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uMT-rd-mUA"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TI4-IL-fu4" secondAttribute="trailing" constant="20" id="yQ1-Qs-VIe"/>
