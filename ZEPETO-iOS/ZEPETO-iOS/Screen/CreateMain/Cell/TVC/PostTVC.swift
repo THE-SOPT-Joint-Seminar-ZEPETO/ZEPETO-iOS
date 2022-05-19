@@ -56,7 +56,6 @@ extension PostTVC: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ImgCVC.className, for: indexPath) as? ImgCVC else {
             return UICollectionViewCell()
         }
-        
         cell.setData(imgList[indexPath.row])
         
         return cell
@@ -66,18 +65,22 @@ extension PostTVC: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension PostTVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellWidth = 163.adjusted
-        let cellHeight = 170.adjustedH
+        let cellWidth: Double = (imgList.count == 2) ? 163.adjusted : 104.adjusted
+        let cellHeight: Double = (imgList.count == 2) ? 170.adjusted : 109.adjusted
         
         return CGSize(width: cellWidth, height: cellHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 16.adjusted, bottom: 0, right: 16.adjusted)
+        let inset: Double = (imgList.count == 2) ? 16.adjusted : 18.adjusted
+        
+        return UIEdgeInsets(top: 0, left: inset, bottom: 0, right: inset)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-       return 17
+        let spacingSize: Int = (imgList.count == 2) ? 17 : 14
+        
+        return CGFloat(spacingSize)
     }
     
 }
