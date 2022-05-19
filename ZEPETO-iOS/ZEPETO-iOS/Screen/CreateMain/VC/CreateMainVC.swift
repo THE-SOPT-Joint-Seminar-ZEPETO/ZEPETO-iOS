@@ -12,9 +12,10 @@ class CreateMainVC: BaseVC {
     // MARK: IBOutlet
     @IBOutlet weak var postTV: UITableView!
     @IBOutlet weak var categoryCV: UICollectionView!
-    
+
     // MARK: Properties
     var categoryList = ["MY", "HOT", "NEW", "템플릿", "커플", "Photo"]
+    let imagePicker = UIImagePickerController()
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -22,13 +23,17 @@ class CreateMainVC: BaseVC {
         
         setPostTV()
         setCategoryCV()
+        setImagePicker()
+    }
+    
+    // MARK: IBAction
+    @IBAction func tapUploadBtn(_ sender: Any) {
+        openGallery()
     }
 }
 
 // MARK: - Custom Methods
 extension CreateMainVC {
-    
-    /// TV 관련 설정하는 메서드
     private func setPostTV() {
         let nib = UINib(nibName: PostTVC.className, bundle: nil)
         postTV.register(nib, forCellReuseIdentifier: PostTVC.className)
@@ -36,13 +41,22 @@ extension CreateMainVC {
         postTV.dataSource = self
     }
     
-    /// 카테고리 CV 관련 설정하는 메서드
     private func setCategoryCV() {
         let nib = UINib(nibName: CategoryCVC.className, bundle: nil)
         categoryCV.register(nib, forCellWithReuseIdentifier: CategoryCVC.className)
         
         categoryCV.delegate = self
         categoryCV.dataSource = self
+    }
+    
+    private func setImagePicker() {
+        imagePicker.delegate = self
+    }
+    
+    private func openGallery(){
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.modalPresentationStyle = .fullScreen
+        present(imagePicker, animated: true, completion: nil)
     }
 }
 
@@ -105,5 +119,18 @@ extension CreateMainVC: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 8
+    }
+}
+
+// MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
+extension CreateMainVC : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    //TODO: 다음 VC에서 이미지 띄워주기
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            
+           // 다음 VC로 이미지 전달
+        }
+        dismiss(animated: true)
     }
 }

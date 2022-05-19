@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="49" height="32"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4T-I2-LvD">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4T-I2-LvD">
                         <rect key="frame" x="0.0" y="0.0" width="49" height="32"/>
                         <color key="backgroundColor" name="gray100"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>

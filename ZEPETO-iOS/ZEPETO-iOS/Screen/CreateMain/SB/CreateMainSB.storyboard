@@ -85,6 +85,28 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc7-ek-aKx">
+                                <rect key="frame" x="246" y="711" width="111" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="G6p-1C-pjK"/>
+                                    <constraint firstAttribute="height" constant="52" id="hos-eL-PAU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                <state key="normal" title="업로드" image="icImageFill">
+                                    <color key="titleColor" name="gray900"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapUploadBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cb8-0M-FbH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,7 +119,9 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EFH-p2-Wd4" secondAttribute="trailing" id="XaI-3E-ldS"/>
                             <constraint firstItem="dX8-tP-ea3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cbR-hZ-knj"/>
                             <constraint firstItem="EFH-p2-Wd4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="g5X-9S-KuP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Pc7-ek-aKx" secondAttribute="trailing" constant="18" id="jcI-5P-UZD"/>
                             <constraint firstItem="dX8-tP-ea3" firstAttribute="top" secondItem="hHQ-Tv-Vg3" secondAttribute="bottom" id="stk-AG-W7p"/>
+                            <constraint firstItem="dX8-tP-ea3" firstAttribute="bottom" secondItem="Pc7-ek-aKx" secondAttribute="bottom" constant="15" id="vqF-Zx-hKJ"/>
                             <constraint firstItem="EFH-p2-Wd4" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="47" id="vx2-rH-3T9"/>
                         </constraints>
                     </view>
@@ -132,9 +156,13 @@
     <resources>
         <image name="icCameraLine" width="24" height="24"/>
         <image name="icChatLine" width="24" height="24"/>
+        <image name="icImageFill" width="20.333333969116211" height="20"/>
         <image name="icSearchLine" width="24" height="24"/>
         <namedColor name="gay800">
             <color red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray900">
+            <color red="0.16078431372549021" green="0.16078431372549021" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
