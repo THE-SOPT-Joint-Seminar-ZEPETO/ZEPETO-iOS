@@ -16,7 +16,6 @@ class ImgCVC: BaseCVC {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
 }
 
 // MARK: - Custom Methods
