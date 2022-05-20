@@ -13,7 +13,7 @@ class PostTVC: BaseTVC {
     @IBOutlet weak var profileImgView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var imgCV: UICollectionView!
+    @IBOutlet weak var ImgCV: UICollectionView!
     
     // MARK: Properties
     var imgList: [ImgDataModel] = []
@@ -35,10 +35,9 @@ extension PostTVC {
     }
     
     private func setImgCV() {
-        let nib = UINib(nibName: ImgCVC.className, bundle: nil)
-        imgCV.register(nib, forCellWithReuseIdentifier: ImgCVC.className)
-        imgCV.delegate = self
-        imgCV.dataSource = self
+        ImgCVC.register(target: ImgCV)
+        ImgCV.delegate = self
+        ImgCV.dataSource = self
     }
 }
 

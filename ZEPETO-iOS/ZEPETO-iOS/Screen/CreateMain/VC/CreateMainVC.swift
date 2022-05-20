@@ -10,8 +10,8 @@ import UIKit
 class CreateMainVC: BaseVC {
     
     // MARK: IBOutlet
-    @IBOutlet weak var postTV: UITableView!
-    @IBOutlet weak var categoryCV: UICollectionView!
+    @IBOutlet weak var PostTV: UITableView!
+    @IBOutlet weak var CategoryCV: UICollectionView!
     
     // MARK: Properties
     var categoryList = ["MY", "HOT", "NEW", "템플릿", "커플", "Photo"]
@@ -35,18 +35,15 @@ class CreateMainVC: BaseVC {
 // MARK: - Custom Methods
 extension CreateMainVC {
     private func setPostTV() {
-        let nib = UINib(nibName: PostTVC.className, bundle: nil)
-        postTV.register(nib, forCellReuseIdentifier: PostTVC.className)
-        postTV.delegate = self
-        postTV.dataSource = self
+        PostTVC.register(target: PostTV)
+        PostTV.delegate = self
+        PostTV.dataSource = self
     }
     
     private func setCategoryCV() {
-        let nib = UINib(nibName: CategoryCVC.className, bundle: nil)
-        categoryCV.register(nib, forCellWithReuseIdentifier: CategoryCVC.className)
-        
-        categoryCV.delegate = self
-        categoryCV.dataSource = self
+        CategoryCVC.register(target: CategoryCV)
+        CategoryCV.delegate = self
+        CategoryCV.dataSource = self
     }
     
     private func setImagePicker() {
