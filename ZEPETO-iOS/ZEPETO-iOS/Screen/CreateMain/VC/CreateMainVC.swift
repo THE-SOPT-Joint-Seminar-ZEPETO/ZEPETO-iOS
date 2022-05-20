@@ -93,8 +93,8 @@ extension CreateMainVC: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCVC.className, for: indexPath) as? CategoryCVC else {
             return UICollectionViewCell()
         }
-        cell.categoryBtn.setTitle(categoryList[indexPath.item], for: .normal)
-        if (indexPath.item == 1) {
+        cell.categoryBtn.setTitle(categoryList[indexPath.row], for: .normal)
+        if indexPath.row == 1 {
             cell.categoryBtn.setTitleColor(.white, for: .normal)
             cell.categoryBtn.setBackgroundColor(.gray900, for: .normal)
         }
@@ -105,7 +105,7 @@ extension CreateMainVC: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension CreateMainVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: categoryList[indexPath.item].size(withAttributes: nil).width + 28, height: 32)
+        return CGSize(width: categoryList[indexPath.row].size(withAttributes: nil).width + 28.adjusted, height: 32.adjusted)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

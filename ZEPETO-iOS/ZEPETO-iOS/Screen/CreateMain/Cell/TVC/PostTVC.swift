@@ -70,13 +70,13 @@ extension PostTVC: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let inset = (imgList.count == 2) ? 16.adjusted : 18.adjusted
+        let inset = (imgList.count == 2) ? 16.0 : 18.0
         
-        return UIEdgeInsets(top: 12.adjustedH, left: inset, bottom: 12.adjustedH, right: inset)
+        return UIEdgeInsets(top: 12, left: inset, bottom: 12, right: inset)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        let spacingSize = (imgList.count == 2) ? 17.adjusted : 14.adjusted
+        let spacingSize = (imgList.count == 2) ? 17 : 14
         
         return CGFloat(spacingSize)
     }
