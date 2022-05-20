@@ -20,8 +20,8 @@ class CategoryCVC: BaseCVC {
     
     override var isSelected: Bool {
         didSet{
-            categoryLabel.textColor = isSelected ? .white : UIColor.gray900
-            backView.backgroundColor = isSelected ? UIColor.gray900 : UIColor.gray100
+            categoryLabel.textColor = isSelected ? .white : .gray900
+            backView.backgroundColor = isSelected ? .gray900 : .gray100
         }
     }
 }
