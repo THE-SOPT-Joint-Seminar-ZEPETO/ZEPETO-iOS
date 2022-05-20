@@ -311,6 +311,10 @@
                                     <color key="baseBackgroundColor" name="point"/>
                                 </buttonConfiguration>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4BL-Uq-yXK">
+                                <rect key="frame" x="0.0" y="244" width="375" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -320,7 +324,9 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oqm-S7-22c" secondAttribute="trailing" id="B7v-MC-TAb"/>
                             <constraint firstItem="R3j-Xb-Q5c" firstAttribute="top" secondItem="MlI-zI-KdZ" secondAttribute="bottom" constant="10" id="E0a-Ys-3p4"/>
                             <constraint firstItem="rQb-TK-w9n" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="GLg-Lm-kyi"/>
+                            <constraint firstItem="4BL-Uq-yXK" firstAttribute="top" secondItem="oqm-S7-22c" secondAttribute="bottom" id="IfF-ip-qbZ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kyx-CW-ecv" secondAttribute="trailing" constant="18" id="J1q-99-sfs"/>
+                            <constraint firstAttribute="bottom" secondItem="4BL-Uq-yXK" secondAttribute="bottom" id="KdX-S3-o5U"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rQb-TK-w9n" secondAttribute="trailing" constant="18" id="Kxm-go-MHY"/>
                             <constraint firstItem="tAx-zT-4vF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="O3z-Hi-7xS"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tAx-zT-4vF" secondAttribute="trailing" id="QLk-U1-h9X"/>
@@ -329,6 +335,8 @@
                             <constraint firstItem="kyx-CW-ecv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="UsX-sE-5Mp"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DGK-NN-Vr2" secondAttribute="trailing" id="YHQ-jh-PdH"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rQb-TK-w9n" secondAttribute="bottom" constant="20" id="aRf-8m-3ld"/>
+                            <constraint firstItem="4BL-Uq-yXK" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="b1K-dR-3rq"/>
+                            <constraint firstItem="4BL-Uq-yXK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="d7n-jC-zdT"/>
                             <constraint firstItem="MlI-zI-KdZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ezq-u0-srv"/>
                             <constraint firstItem="DGK-NN-Vr2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="f3w-2y-O1Q"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MlI-zI-KdZ" secondAttribute="trailing" id="nqy-yu-QVO"/>
@@ -339,6 +347,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="darkBGView" destination="4BL-Uq-yXK" id="mYI-11-ZjN"/>
                         <outlet property="hashTagView" destination="F8u-Mp-zIj" id="GcS-Ox-TSX"/>
                         <outlet property="mainImgView" destination="gzK-cT-wtS" id="aa4-zC-hcP"/>
                         <outlet property="mainTextView" destination="sFs-R3-RBX" id="MbF-IK-0fi"/>
@@ -346,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="98"/>
+            <point key="canvasLocation" x="20" y="97.536945812807886"/>
         </scene>
     </scenes>
     <resources>
