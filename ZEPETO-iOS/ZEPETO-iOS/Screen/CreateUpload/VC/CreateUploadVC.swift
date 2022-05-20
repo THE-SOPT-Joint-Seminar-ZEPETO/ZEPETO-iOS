@@ -8,22 +8,52 @@
 import UIKit
 
 class CreateUploadVC: BaseVC {
-
+    
+    // MARK: IBOutlet
+    @IBOutlet weak var mainTextView: UITextView!
+    @IBOutlet weak var darkBgView: UIView!
+    
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        configUI()
+        setDelegate()
+    }
+}
 
-        // Do any additional setup after loading the view.
+// MARK: - UI
+extension CreateUploadVC {
+    private func configUI() {
+        mainTextView.textColor = .gray300
+        darkBgView.isHidden = true
+    }
+}
+
+// MARK: - Custom Methods
+extension CreateUploadVC {
+    private func setDelegate() {
+        mainTextView.delegate = self
+    }
+}
+
+// MARK: - UITextViewDelegate
+extension CreateUploadVC: UITextViewDelegate {
+    
+    /// 텍스트뷰 편집 시작시 placeholder 텍스트를 없애고 색상을 어둡게 변경하는 메서드
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        darkBgView.isHidden = false
+        if textView.textColor == .gray300 {
+            textView.text = nil
+            textView.textColor = .gray800
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    /// 텍스트뷰 편집 종료시 비어있으면 placeholder 텍스트를 추가하는 메서드
+    func textViewDidEndEditing(_ textView: UITextView) {
+        darkBgView.isHidden = true
+        if textView.text.isEmpty {
+            textView.text = "이야기를 완성하세요"
+            textView.textColor = .gray300
+        }
     }
-    */
-
 }
