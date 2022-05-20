@@ -11,7 +11,6 @@
 		774BF66728323FDC00AA71F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF66628323FDC00AA71F1 /* SceneDelegate.swift */; };
 		774BF66E28323FDD00AA71F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774BF66D28323FDD00AA71F1 /* Assets.xcassets */; };
 		774BF67128323FDD00AA71F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF66F28323FDD00AA71F1 /* LaunchScreen.storyboard */; };
-		774BF67F2832438700AA71F1 /* AppContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF67E2832438700AA71F1 /* AppContentDataModel.swift */; };
 		774BF6842832440A00AA71F1 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6832832440A00AA71F1 /* BaseVC.swift */; };
 		774BF6862832443E00AA71F1 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6852832443E00AA71F1 /* Identifiers.swift */; };
 		774BF6882832446C00AA71F1 /* TVRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6872832446C00AA71F1 /* TVRegisterable.swift */; };
@@ -69,7 +68,6 @@
 		774BF66D28323FDD00AA71F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		774BF67028323FDD00AA71F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		774BF67228323FDD00AA71F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		774BF67E2832438700AA71F1 /* AppContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentDataModel.swift; sourceTree = "<group>"; };
 		774BF6832832440A00AA71F1 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		774BF6852832443E00AA71F1 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		774BF6872832446C00AA71F1 /* TVRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRegisterable.swift; sourceTree = "<group>"; };
@@ -218,7 +216,8 @@
 		774BF67D2832437000AA71F1 /* AppModel */ = {
 			isa = PBXGroup;
 			children = (
-				774BF67E2832438700AA71F1 /* AppContentDataModel.swift */,
+				84CB148D28352B190028A17F /* ImgDataModel.swift */,
+				842AB6702832CDC5002D9406 /* PostDataModel.swift */,
 			);
 			path = AppModel;
 			sourceTree = "<group>";
@@ -461,7 +460,6 @@
 			children = (
 				842AB66A2832C8D4002D9406 /* PostTVC.swift */,
 				842AB66B2832C8D4002D9406 /* PostTVC.xib */,
-				842AB6702832CDC5002D9406 /* PostDataModel.swift */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -469,29 +467,12 @@
 		84CB14802832DA810028A17F /* CVC */ = {
 			isa = PBXGroup;
 			children = (
-				84CB148628334C0B0028A17F /* Category */,
-				84CB148528334C080028A17F /* Img */,
-			);
-			path = CVC;
-			sourceTree = "<group>";
-		};
-		84CB148528334C080028A17F /* Img */ = {
-			isa = PBXGroup;
-			children = (
-				84CB14812832DA930028A17F /* ImgCVC.swift */,
-				84CB14822832DA930028A17F /* ImgCVC.xib */,
-				84CB148D28352B190028A17F /* ImgDataModel.swift */,
-			);
-			path = Img;
-			sourceTree = "<group>";
-		};
-		84CB148628334C0B0028A17F /* Category */ = {
-			isa = PBXGroup;
-			children = (
 				84CB148728334C2D0028A17F /* CategoryCVC.swift */,
 				84CB148828334C2D0028A17F /* CategoryCVC.xib */,
+				84CB14812832DA930028A17F /* ImgCVC.swift */,
+				84CB14822832DA930028A17F /* ImgCVC.xib */,
 			);
-			path = Category;
+			path = CVC;
 			sourceTree = "<group>";
 		};
 		8F1B7AB4752BF63D9B274AC2 /* Frameworks */ = {
@@ -660,7 +641,6 @@
 				842AB66C2832C8D4002D9406 /* PostTVC.swift in Sources */,
 				774BF6D328325B5400AA71F1 /* HomeVC.swift in Sources */,
 				774BF6AB28324F8000AA71F1 /* CreateMainVC.swift in Sources */,
-				774BF67F2832438700AA71F1 /* AppContentDataModel.swift in Sources */,
 				774BF6862832443E00AA71F1 /* Identifiers.swift in Sources */,
 				774BF6842832440A00AA71F1 /* BaseVC.swift in Sources */,
 				774BF6E928326EC600AA71F1 /* MypageVC.swift in Sources */,
