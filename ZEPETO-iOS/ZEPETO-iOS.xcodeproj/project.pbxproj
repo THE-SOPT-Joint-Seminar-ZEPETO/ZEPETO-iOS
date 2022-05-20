@@ -11,7 +11,6 @@
 		774BF66728323FDC00AA71F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF66628323FDC00AA71F1 /* SceneDelegate.swift */; };
 		774BF66E28323FDD00AA71F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774BF66D28323FDD00AA71F1 /* Assets.xcassets */; };
 		774BF67128323FDD00AA71F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774BF66F28323FDD00AA71F1 /* LaunchScreen.storyboard */; };
-		774BF67F2832438700AA71F1 /* AppContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF67E2832438700AA71F1 /* AppContentDataModel.swift */; };
 		774BF6842832440A00AA71F1 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6832832440A00AA71F1 /* BaseVC.swift */; };
 		774BF6862832443E00AA71F1 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6852832443E00AA71F1 /* Identifiers.swift */; };
 		774BF6882832446C00AA71F1 /* TVRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6872832446C00AA71F1 /* TVRegisterable.swift */; };
@@ -51,6 +50,14 @@
 		774BF6ED2832777C00AA71F1 /* UITabBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6EC2832777C00AA71F1 /* UITabBar+.swift */; };
 		84DB19632836434600F15BF3 /* CreateEditSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DB19622836434600F15BF3 /* CreateEditSB.storyboard */; };
 		84DB19652836435C00F15BF3 /* CreateEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB19642836435C00F15BF3 /* CreateEditVC.swift */; };
+		842AB66C2832C8D4002D9406 /* PostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB66A2832C8D4002D9406 /* PostTVC.swift */; };
+		842AB66D2832C8D4002D9406 /* PostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842AB66B2832C8D4002D9406 /* PostTVC.xib */; };
+		842AB6712832CDC5002D9406 /* PostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB6702832CDC5002D9406 /* PostDataModel.swift */; };
+		84CB14832832DA930028A17F /* ImgCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB14812832DA930028A17F /* ImgCVC.swift */; };
+		84CB14842832DA930028A17F /* ImgCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CB14822832DA930028A17F /* ImgCVC.xib */; };
+		84CB148928334C2D0028A17F /* CategoryCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB148728334C2D0028A17F /* CategoryCVC.swift */; };
+		84CB148A28334C2D0028A17F /* CategoryCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CB148828334C2D0028A17F /* CategoryCVC.xib */; };
+		84CB148E28352B190028A17F /* ImgDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB148D28352B190028A17F /* ImgDataModel.swift */; };
 		89CFF3AFF7880FE9E6B68D80 /* Pods_ZEPETO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +70,6 @@
 		774BF66D28323FDD00AA71F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		774BF67028323FDD00AA71F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		774BF67228323FDD00AA71F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		774BF67E2832438700AA71F1 /* AppContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentDataModel.swift; sourceTree = "<group>"; };
 		774BF6832832440A00AA71F1 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		774BF6852832443E00AA71F1 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		774BF6872832446C00AA71F1 /* TVRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVRegisterable.swift; sourceTree = "<group>"; };
@@ -103,6 +109,14 @@
 		774BF6EC2832777C00AA71F1 /* UITabBar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+.swift"; sourceTree = "<group>"; };
 		84DB19622836434600F15BF3 /* CreateEditSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEditSB.storyboard; sourceTree = "<group>"; };
 		84DB19642836435C00F15BF3 /* CreateEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditVC.swift; sourceTree = "<group>"; };
+		842AB66A2832C8D4002D9406 /* PostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
+		842AB66B2832C8D4002D9406 /* PostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTVC.xib; sourceTree = "<group>"; };
+		842AB6702832CDC5002D9406 /* PostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModel.swift; sourceTree = "<group>"; };
+		84CB14812832DA930028A17F /* ImgCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgCVC.swift; sourceTree = "<group>"; };
+		84CB14822832DA930028A17F /* ImgCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgCVC.xib; sourceTree = "<group>"; };
+		84CB148728334C2D0028A17F /* CategoryCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVC.swift; sourceTree = "<group>"; };
+		84CB148828334C2D0028A17F /* CategoryCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCVC.xib; sourceTree = "<group>"; };
+		84CB148D28352B190028A17F /* ImgDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgDataModel.swift; sourceTree = "<group>"; };
 		A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEPETO-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,7 +221,8 @@
 		774BF67D2832437000AA71F1 /* AppModel */ = {
 			isa = PBXGroup;
 			children = (
-				774BF67E2832438700AA71F1 /* AppContentDataModel.swift */,
+				84CB148D28352B190028A17F /* ImgDataModel.swift */,
+				842AB6702832CDC5002D9406 /* PostDataModel.swift */,
 			);
 			path = AppModel;
 			sourceTree = "<group>";
@@ -257,6 +272,7 @@
 		774BF6A228324E2100AA71F1 /* CreateMain */ = {
 			isa = PBXGroup;
 			children = (
+				842AB6692832B8FF002D9406 /* Cell */,
 				774BF6A528324EF000AA71F1 /* SB */,
 				774BF6A628324EFE00AA71F1 /* VC */,
 			);
@@ -460,6 +476,35 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		842AB6692832B8FF002D9406 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84CB14802832DA810028A17F /* CVC */,
+				842AB66E2832CB1F002D9406 /* TVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		842AB66E2832CB1F002D9406 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				842AB66A2832C8D4002D9406 /* PostTVC.swift */,
+				842AB66B2832C8D4002D9406 /* PostTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		84CB14802832DA810028A17F /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				84CB148728334C2D0028A17F /* CategoryCVC.swift */,
+				84CB148828334C2D0028A17F /* CategoryCVC.xib */,
+				84CB14812832DA930028A17F /* ImgCVC.swift */,
+				84CB14822832DA930028A17F /* ImgCVC.xib */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
 		8F1B7AB4752BF63D9B274AC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -538,9 +583,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				774BF6D928325C4800AA71F1 /* PlanetSB.storyboard in Resources */,
+				842AB66D2832C8D4002D9406 /* PostTVC.xib in Resources */,
 				774BF6A12832498100AA71F1 /* Colorsets.xcassets in Resources */,
+				84CB14842832DA930028A17F /* ImgCVC.xib in Resources */,
 				774BF67128323FDD00AA71F1 /* LaunchScreen.storyboard in Resources */,
 				774BF66E28323FDD00AA71F1 /* Assets.xcassets in Resources */,
+				84CB148A28334C2D0028A17F /* CategoryCVC.xib in Resources */,
 				774BF6BD2832509F00AA71F1 /* CreateUploadSB.storyboard in Resources */,
 				84DB19632836434600F15BF3 /* CreateEditSB.storyboard in Resources */,
 				774BF6E528326E8100AA71F1 /* MypageSB.storyboard in Resources */,
@@ -603,6 +651,8 @@
 				774BF6DF28326E0300AA71F1 /* CreateNC.swift in Sources */,
 				774BF6E128326E3900AA71F1 /* FeedNC.swift in Sources */,
 				774BF68A2832448A00AA71F1 /* CVRegisterable.swift in Sources */,
+				842AB6712832CDC5002D9406 /* PostDataModel.swift in Sources */,
+				84CB14832832DA930028A17F /* ImgCVC.swift in Sources */,
 				774BF6C62832528F00AA71F1 /* TypeOfViewController.swift in Sources */,
 				774BF6ED2832777C00AA71F1 /* UITabBar+.swift in Sources */,
 				774BF6BB2832506100AA71F1 /* FeedVC.swift in Sources */,
@@ -615,18 +665,20 @@
 				774BF69B2832478200AA71F1 /* UITextView+.swift in Sources */,
 				774BF68F2832451000AA71F1 /* UIView+.swift in Sources */,
 				774BF66728323FDC00AA71F1 /* SceneDelegate.swift in Sources */,
+				84CB148E28352B190028A17F /* ImgDataModel.swift in Sources */,
 				774BF69D283247CD00AA71F1 /* Adjusted+.swift in Sources */,
 				774BF6952832466E00AA71F1 /* UIButton+.swift in Sources */,
 				774BF68D283244D600AA71F1 /* UIViewController+.swift in Sources */,
 				774BF6CA283253C900AA71F1 /* ViewControllerFactory.swift in Sources */,
+				842AB66C2832C8D4002D9406 /* PostTVC.swift in Sources */,
 				774BF6D328325B5400AA71F1 /* HomeVC.swift in Sources */,
 				774BF6AB28324F8000AA71F1 /* CreateMainVC.swift in Sources */,
-				774BF67F2832438700AA71F1 /* AppContentDataModel.swift in Sources */,
 				774BF6862832443E00AA71F1 /* Identifiers.swift in Sources */,
 				774BF6842832440A00AA71F1 /* BaseVC.swift in Sources */,
 				774BF6E928326EC600AA71F1 /* MypageVC.swift in Sources */,
 				774BF6992832473800AA71F1 /* UILabel+.swift in Sources */,
 				774BF6C82832530D00AA71F1 /* StoryboardRepresentation.swift in Sources */,
+				84CB148928334C2D0028A17F /* CategoryCVC.swift in Sources */,
 				774BF693283245B900AA71F1 /* BaseCVC.swift in Sources */,
 				774BF697283246EA00AA71F1 /* UIColor+.swift in Sources */,
 				774BF6DB28326D7800AA71F1 /* PlanetNC.swift in Sources */,
