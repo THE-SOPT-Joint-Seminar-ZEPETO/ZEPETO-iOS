@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCVC" customModule="ZEPETO_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="47" height="32"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="47" height="32"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAh-b0-RkX">
+                        <rect key="frame" x="0.0" y="0.0" width="47" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZZ-tQ-QHX">
+                                <rect key="frame" x="14" y="8" width="21" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <color key="textColor" name="gray900"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="gray100"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VAh-b0-RkX" secondAttribute="trailing" id="2Y9-XM-WYS"/>
+                <constraint firstAttribute="bottom" secondItem="VAh-b0-RkX" secondAttribute="bottom" id="4KT-8g-ygB"/>
+                <constraint firstItem="VAh-b0-RkX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7zz-9b-z6X"/>
+                <constraint firstItem="VAh-b0-RkX" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Yl8-ZB-ZvK"/>
+                <constraint firstItem="VAh-b0-RkX" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gpv-Km-2By"/>
+                <constraint firstItem="VAh-b0-RkX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="izQ-ph-tft"/>
+            </constraints>
+            <size key="customSize" width="114" height="57"/>
+            <connections>
+                <outlet property="backView" destination="VAh-b0-RkX" id="uCz-vy-QZF"/>
+                <outlet property="categoryLabel" destination="VZZ-tQ-QHX" id="Sxe-kk-2LE"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="117.85714285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="gray100">
+            <color red="0.95686274509803926" green="0.95294117647058818" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray900">
+            <color red="0.16078431372549021" green="0.16078431372549021" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
