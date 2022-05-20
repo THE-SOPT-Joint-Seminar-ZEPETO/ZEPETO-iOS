@@ -23,7 +23,6 @@ class CreateMainVC: BaseVC {
         setPostTV()
         setCategoryCV()
         setImagePicker()
-
     }
     
     // MARK: IBAction
@@ -63,7 +62,7 @@ extension CreateMainVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let height = (PostDataModel.sampleData[indexPath.row].imgList.count == 2) ? 268.adjustedH : 207.adjustedH
         
-        return CGFloat(height)
+        return height
     }
 }
 
