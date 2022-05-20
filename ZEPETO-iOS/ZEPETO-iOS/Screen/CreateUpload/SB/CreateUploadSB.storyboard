@@ -347,7 +347,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="darkBGView" destination="4BL-Uq-yXK" id="mYI-11-ZjN"/>
+                        <outlet property="darkBgView" destination="4BL-Uq-yXK" id="kOu-Vf-Zbb"/>
                         <outlet property="mainTextView" destination="sFs-R3-RBX" id="MbF-IK-0fi"/>
                     </connections>
                 </viewController>
