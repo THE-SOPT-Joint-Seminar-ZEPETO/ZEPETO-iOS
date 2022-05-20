@@ -80,5 +80,4 @@ extension PostTVC: UICollectionViewDelegateFlowLayout {
         
         return CGFloat(spacingSize)
     }
-    
 }
