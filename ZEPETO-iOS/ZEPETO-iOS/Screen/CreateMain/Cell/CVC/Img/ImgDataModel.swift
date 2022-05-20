@@ -8,8 +8,8 @@
 import UIKit
 
 struct ImgDataModel {
-    let imgName: String
-    var img: UIImage? {
-        return UIImage(named: imgName)
+    let contentImgName: String
+    var contentImg: UIImage? {
+        return UIImage(named: contentImgName)
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 class ImgCVC: BaseCVC {
 
     // MARK: IBOutlet
-    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var contentImgView: UIImageView!
     
     // MARK: Life Cycle
     override func awakeFromNib() {
@@ -21,6 +21,6 @@ class ImgCVC: BaseCVC {
 // MARK: - Custom Methods
 extension ImgCVC {
     func setData(_ imgData: ImgDataModel) {
-        img.image = imgData.img
+        contentImgView.image = imgData.contentImg
     }
 }
