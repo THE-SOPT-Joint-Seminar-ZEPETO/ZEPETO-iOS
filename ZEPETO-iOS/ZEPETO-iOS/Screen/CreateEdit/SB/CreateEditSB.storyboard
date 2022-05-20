@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create EditVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CreateEditVC" id="Y6W-OH-hqX" customClass="CreateEditVC" customModule="ZEPETO_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="du6-si-s3h">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ia-Og-lXu">
+                                <rect key="frame" x="12" y="56" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="7MS-gB-sHd"/>
+                                    <constraint firstAttribute="width" constant="36" id="ybR-8V-f7V"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="icXLine"/>
+                                <connections>
+                                    <action selector="tapCloseBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rwG-IT-3jv"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="FKX-OG-eRn">
+                                <rect key="frame" x="333" y="63" width="24" height="192"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MoJ-my-ihu">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="1Vj-ZK-Qu8"/>
+                                            <constraint firstAttribute="width" constant="24" id="ZCi-Kw-CVm"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="icTwosquareLilne" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSi-06-7kb">
+                                        <rect key="frame" x="0.0" y="56" width="24" height="24"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="icFilterLilne"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pne-Dp-i7e">
+                                        <rect key="frame" x="0.0" y="112" width="24" height="24"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="icSmileLine"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpS-HB-TyU">
+                                        <rect key="frame" x="0.0" y="168" width="24" height="24"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="icAaLine"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dSi-06-7kb" firstAttribute="width" secondItem="MoJ-my-ihu" secondAttribute="width" id="Ep3-yY-SeP"/>
+                                    <constraint firstItem="dSi-06-7kb" firstAttribute="height" secondItem="MoJ-my-ihu" secondAttribute="height" id="Eqn-mM-VNm"/>
+                                    <constraint firstItem="pne-Dp-i7e" firstAttribute="width" secondItem="MoJ-my-ihu" secondAttribute="width" id="IQV-Hh-gsl"/>
+                                    <constraint firstItem="TpS-HB-TyU" firstAttribute="height" secondItem="MoJ-my-ihu" secondAttribute="height" id="RAZ-lY-eux"/>
+                                    <constraint firstItem="TpS-HB-TyU" firstAttribute="width" secondItem="MoJ-my-ihu" secondAttribute="width" id="ZGA-BU-I1h"/>
+                                    <constraint firstItem="pne-Dp-i7e" firstAttribute="height" secondItem="MoJ-my-ihu" secondAttribute="height" id="hE8-ld-vdW"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TI4-IL-fu4">
+                                <rect key="frame" x="299" y="694" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="NOh-q5-uKE"/>
+                                    <constraint firstAttribute="height" constant="56" id="R0d-zq-M24"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="iosButtonFloating"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer." value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapNextBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="K9u-5P-Dxu"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5sa-RR-TRs">
+                                <rect key="frame" x="24" y="701.66666666666663" width="31.333333333333329" height="50.333333333333371"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icUserLinePlus" translatesAutoresizingMaskIntoConstraints="NO" id="Y0J-R4-O1c">
+                                        <rect key="frame" x="3.6666666666666679" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="94H-fI-hdw"/>
+                                            <constraint firstAttribute="width" constant="24" id="AtV-Cg-m2c"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="캐릭터" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYK-Ju-duL">
+                                        <rect key="frame" x="0.0" y="36" width="31.333333333333332" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gCy-0G-4qG">
+                                <rect key="frame" x="81" y="701.66666666666663" width="24" height="50.333333333333371"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icDownloadLine" translatesAutoresizingMaskIntoConstraints="NO" id="w3B-PK-Vcl">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="fAo-zh-mp5"/>
+                                            <constraint firstAttribute="width" constant="24" id="t0z-Js-1GC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNr-lp-Ycr">
+                                        <rect key="frame" x="1.3333333333333286" y="36" width="21" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gCy-0G-4qG" secondAttribute="bottom" constant="26" id="AYh-hS-aFx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FKX-OG-eRn" secondAttribute="trailing" constant="18" id="DcI-lq-Zq3"/>
+                            <constraint firstItem="gCy-0G-4qG" firstAttribute="leading" secondItem="5sa-RR-TRs" secondAttribute="trailing" constant="25.5" id="JFg-Qm-zWg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="du6-si-s3h" secondAttribute="trailing" id="Ke9-hN-4lS"/>
+                            <constraint firstItem="5sa-RR-TRs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="Qss-Ej-Wue"/>
+                            <constraint firstItem="9Ia-Og-lXu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="12" id="TAW-Dh-v6q"/>
+                            <constraint firstItem="du6-si-s3h" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="VFx-Ca-lEL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="5sa-RR-TRs" secondAttribute="bottom" constant="26" id="ZOq-BS-SA3"/>
+                            <constraint firstItem="9Ia-Og-lXu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="cKo-Ug-ELb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TI4-IL-fu4" secondAttribute="bottom" constant="28" id="eof-Py-rr8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="du6-si-s3h" secondAttribute="bottom" id="fZ8-Ao-Y7y"/>
+                            <constraint firstItem="FKX-OG-eRn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="19" id="s6y-WD-z0G"/>
+                            <constraint firstItem="du6-si-s3h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uMT-rd-mUA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TI4-IL-fu4" secondAttribute="trailing" constant="20" id="yQ1-Qs-VIe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectedImgView" destination="du6-si-s3h" id="8NX-8z-59X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icAaLine" width="31.333333969116211" height="24"/>
+        <image name="icDownloadLine" width="24" height="28.666666030883789"/>
+        <image name="icFilterLilne" width="31.333333969116211" height="30"/>
+        <image name="icSmileLine" width="31.333333969116211" height="31.333333969116211"/>
+        <image name="icTwosquareLilne" width="31.333333969116211" height="31.333333969116211"/>
+        <image name="icUserLinePlus" width="31.333333969116211" height="25.333333969116211"/>
+        <image name="icXLine" width="24" height="24"/>
+        <image name="iosButtonFloating" width="72" height="72"/>
+    </resources>
+</document>
