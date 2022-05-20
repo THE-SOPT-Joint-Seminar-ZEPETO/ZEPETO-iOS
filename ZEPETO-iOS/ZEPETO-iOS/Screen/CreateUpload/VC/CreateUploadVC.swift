@@ -11,8 +11,6 @@ class CreateUploadVC: BaseVC {
     
     // MARK: IBOutlet
     @IBOutlet weak var mainTextView: UITextView!
-    @IBOutlet weak var hashTagView: UIView!
-    @IBOutlet weak var mainImgView: UIImageView!
     @IBOutlet weak var darkBGView: UIView!
     
     // MARK: Life Cycle

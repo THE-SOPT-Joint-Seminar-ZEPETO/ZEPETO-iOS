@@ -348,8 +348,6 @@
                     </view>
                     <connections>
                         <outlet property="darkBGView" destination="4BL-Uq-yXK" id="mYI-11-ZjN"/>
-                        <outlet property="hashTagView" destination="F8u-Mp-zIj" id="GcS-Ox-TSX"/>
-                        <outlet property="mainImgView" destination="gzK-cT-wtS" id="aa4-zC-hcP"/>
                         <outlet property="mainTextView" destination="sFs-R3-RBX" id="MbF-IK-0fi"/>
                     </connections>
                 </viewController>
