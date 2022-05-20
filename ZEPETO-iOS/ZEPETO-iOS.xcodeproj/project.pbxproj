@@ -48,8 +48,6 @@
 		774BF6E728326EA900AA71F1 /* MypageNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6E628326EA900AA71F1 /* MypageNC.swift */; };
 		774BF6E928326EC600AA71F1 /* MypageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6E828326EC600AA71F1 /* MypageVC.swift */; };
 		774BF6ED2832777C00AA71F1 /* UITabBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774BF6EC2832777C00AA71F1 /* UITabBar+.swift */; };
-		84DB19632836434600F15BF3 /* CreateEditSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DB19622836434600F15BF3 /* CreateEditSB.storyboard */; };
-		84DB19652836435C00F15BF3 /* CreateEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB19642836435C00F15BF3 /* CreateEditVC.swift */; };
 		842AB66C2832C8D4002D9406 /* PostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB66A2832C8D4002D9406 /* PostTVC.swift */; };
 		842AB66D2832C8D4002D9406 /* PostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842AB66B2832C8D4002D9406 /* PostTVC.xib */; };
 		842AB6712832CDC5002D9406 /* PostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB6702832CDC5002D9406 /* PostDataModel.swift */; };
@@ -58,6 +56,8 @@
 		84CB148928334C2D0028A17F /* CategoryCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB148728334C2D0028A17F /* CategoryCVC.swift */; };
 		84CB148A28334C2D0028A17F /* CategoryCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CB148828334C2D0028A17F /* CategoryCVC.xib */; };
 		84CB148E28352B190028A17F /* ImgDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB148D28352B190028A17F /* ImgDataModel.swift */; };
+		84DB19632836434600F15BF3 /* CreateEditSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DB19622836434600F15BF3 /* CreateEditSB.storyboard */; };
+		84DB19652836435C00F15BF3 /* CreateEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB19642836435C00F15BF3 /* CreateEditVC.swift */; };
 		89CFF3AFF7880FE9E6B68D80 /* Pods_ZEPETO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,8 +107,6 @@
 		774BF6E628326EA900AA71F1 /* MypageNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageNC.swift; sourceTree = "<group>"; };
 		774BF6E828326EC600AA71F1 /* MypageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageVC.swift; sourceTree = "<group>"; };
 		774BF6EC2832777C00AA71F1 /* UITabBar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBar+.swift"; sourceTree = "<group>"; };
-		84DB19622836434600F15BF3 /* CreateEditSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEditSB.storyboard; sourceTree = "<group>"; };
-		84DB19642836435C00F15BF3 /* CreateEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditVC.swift; sourceTree = "<group>"; };
 		842AB66A2832C8D4002D9406 /* PostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
 		842AB66B2832C8D4002D9406 /* PostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTVC.xib; sourceTree = "<group>"; };
 		842AB6702832CDC5002D9406 /* PostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModel.swift; sourceTree = "<group>"; };
@@ -117,6 +115,8 @@
 		84CB148728334C2D0028A17F /* CategoryCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVC.swift; sourceTree = "<group>"; };
 		84CB148828334C2D0028A17F /* CategoryCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCVC.xib; sourceTree = "<group>"; };
 		84CB148D28352B190028A17F /* ImgDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgDataModel.swift; sourceTree = "<group>"; };
+		84DB19622836434600F15BF3 /* CreateEditSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEditSB.storyboard; sourceTree = "<group>"; };
+		84DB19642836435C00F15BF3 /* CreateEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditVC.swift; sourceTree = "<group>"; };
 		A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEPETO-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -451,31 +451,6 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
-		84DB195F283642D400F15BF3 /* CreateEdit */ = {
-			isa = PBXGroup;
-			children = (
-				84DB1960283642DB00F15BF3 /* SV */,
-				84DB1961283642E000F15BF3 /* VC */,
-			);
-			path = CreateEdit;
-			sourceTree = "<group>";
-		};
-		84DB1960283642DB00F15BF3 /* SV */ = {
-			isa = PBXGroup;
-			children = (
-				84DB19622836434600F15BF3 /* CreateEditSB.storyboard */,
-			);
-			path = SV;
-			sourceTree = "<group>";
-		};
-		84DB1961283642E000F15BF3 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				84DB19642836435C00F15BF3 /* CreateEditVC.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
 		842AB6692832B8FF002D9406 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +478,31 @@
 				84CB14822832DA930028A17F /* ImgCVC.xib */,
 			);
 			path = CVC;
+			sourceTree = "<group>";
+		};
+		84DB195F283642D400F15BF3 /* CreateEdit */ = {
+			isa = PBXGroup;
+			children = (
+				84DB1960283642DB00F15BF3 /* SB */,
+				84DB1961283642E000F15BF3 /* VC */,
+			);
+			path = CreateEdit;
+			sourceTree = "<group>";
+		};
+		84DB1960283642DB00F15BF3 /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				84DB19622836434600F15BF3 /* CreateEditSB.storyboard */,
+			);
+			path = SB;
+			sourceTree = "<group>";
+		};
+		84DB1961283642E000F15BF3 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				84DB19642836435C00F15BF3 /* CreateEditVC.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		8F1B7AB4752BF63D9B274AC2 /* Frameworks */ = {
