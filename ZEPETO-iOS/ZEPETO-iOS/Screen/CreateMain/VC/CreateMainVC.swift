@@ -20,7 +20,6 @@ class CreateMainVC: BaseVC {
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setPostTV()
         setCategoryCV()
         setImagePicker()
@@ -99,7 +98,6 @@ extension CreateMainVC: UICollectionViewDataSource {
             cell.categoryBtn.setTitleColor(.white, for: .normal)
             cell.categoryBtn.setBackgroundColor(.gray900, for: .normal)
         }
-        
         return cell
     }
 }
