@@ -21,14 +21,18 @@ class CreateUploadVC: BaseVC {
         configUI()
         setDelegate()
     }
-    
-    // MARK: UI
+}
+
+// MARK: - UI
+extension CreateUploadVC {
     private func configUI() {
         mainTextView.textColor = .gray300
         darkBGView.isHidden = true
     }
-    
-    // MARK: Custom Methods [?] 이거 주석 요렇게 달아도 되나요??
+}
+
+// MARK: - Custom Methods
+extension CreateUploadVC {
     private func setDelegate() {
         mainTextView.delegate = self
     }
