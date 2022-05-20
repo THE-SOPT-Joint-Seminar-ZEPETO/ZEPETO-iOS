@@ -63,20 +63,20 @@ extension PostTVC: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension PostTVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellWidth: Double = (imgList.count == 2) ? 163.adjusted : 104.adjusted
-        let cellHeight: Double = (imgList.count == 2) ? 170.adjusted : 109.adjusted
+        let cellWidth = (imgList.count == 2) ? 163.adjusted : 104.adjusted
+        let cellHeight = (imgList.count == 2) ? 170.adjusted : 109.adjusted
         
         return CGSize(width: cellWidth, height: cellHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let inset: Double = (imgList.count == 2) ? 16.adjusted : 18.adjusted
+        let inset = (imgList.count == 2) ? 16.adjusted : 18.adjusted
         
         return UIEdgeInsets(top: 0, left: inset, bottom: 0, right: inset)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        let spacingSize: Int = (imgList.count == 2) ? 17 : 14
+        let spacingSize = (imgList.count == 2) ? 17 : 14
         
         return CGFloat(spacingSize)
     }

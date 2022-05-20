@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -15,20 +14,20 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="CreateMainVC" customModule="ZEPETO_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFH-p2-Wd4">
-                                <rect key="frame" x="0.0" y="47" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="47" width="600" height="56"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만들기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoZ-oP-soW">
-                                        <rect key="frame" x="18.000000000000004" y="13.666666666666666" width="62.333333333333343" height="28.666666666666671"/>
+                                        <rect key="frame" x="18" y="13.5" width="62.5" height="29"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                         <color key="textColor" name="gay800"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="R7u-gO-ehz">
-                                        <rect key="frame" x="227" y="6" width="140" height="44"/>
+                                        <rect key="frame" x="452" y="6" width="140" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSi-xZ-slp">
                                                 <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -60,10 +59,10 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dX8-tP-ea3">
-                                <rect key="frame" x="0.0" y="163" width="375" height="615"/>
+                                <rect key="frame" x="0.0" y="163" width="600" height="437"/>
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hHQ-Tv-Vg3">
-                                <rect key="frame" x="0.0" y="103" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="103" width="600" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="PFA-pC-P0g"/>
@@ -86,7 +85,7 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc7-ek-aKx">
-                                <rect key="frame" x="246" y="711" width="111" height="52"/>
+                                <rect key="frame" x="471" y="533" width="111" height="52"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="111" id="G6p-1C-pjK"/>
@@ -138,8 +137,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="k6q-Ow-TdF"/>
                     <connections>
-                        <outlet property="categoryCV" destination="hHQ-Tv-Vg3" id="Hr4-ww-YRS"/>
-                        <outlet property="postTV" destination="dX8-tP-ea3" id="5od-7B-Uy7"/>
+                        <outlet property="CategoryCV" destination="hHQ-Tv-Vg3" id="Hr4-ww-YRS"/>
+                        <outlet property="PostTV" destination="dX8-tP-ea3" id="5od-7B-Uy7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -152,6 +151,7 @@
                 <navigationController storyboardIdentifier="CreateNC" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="5Oc-Af-TQL" customClass="CreateNC" customModule="ZEPETO_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1wF-8H-pr4">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
