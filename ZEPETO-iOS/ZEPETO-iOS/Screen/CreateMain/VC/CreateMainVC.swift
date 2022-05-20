@@ -10,8 +10,8 @@ import UIKit
 class CreateMainVC: BaseVC {
     
     // MARK: IBOutlet
-    @IBOutlet weak var PostTV: UITableView!
-    @IBOutlet weak var CategoryCV: UICollectionView!
+    @IBOutlet weak var postTV: UITableView!
+    @IBOutlet weak var categoryCV: UICollectionView!
     
     // MARK: Properties
     var categoryList = ["MY", "HOT", "NEW", "템플릿", "커플", "Photo"]
@@ -23,6 +23,7 @@ class CreateMainVC: BaseVC {
         setPostTV()
         setCategoryCV()
         setImagePicker()
+
     }
     
     // MARK: IBAction
@@ -34,15 +35,16 @@ class CreateMainVC: BaseVC {
 // MARK: - Custom Methods
 extension CreateMainVC {
     private func setPostTV() {
-        PostTVC.register(target: PostTV)
-        PostTV.delegate = self
-        PostTV.dataSource = self
+        PostTVC.register(target: postTV)
+        postTV.delegate = self
+        postTV.dataSource = self
     }
     
     private func setCategoryCV() {
-        CategoryCVC.register(target: CategoryCV)
-        CategoryCV.delegate = self
-        CategoryCV.dataSource = self
+        CategoryCVC.register(target: categoryCV)
+        categoryCV.delegate = self
+        categoryCV.dataSource = self
+        categoryCV.selectItem(at: IndexPath(item: 1, section: 0), animated: true, scrollPosition: .left)
     }
     
     private func setImagePicker() {
@@ -93,11 +95,10 @@ extension CreateMainVC: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCVC.className, for: indexPath) as? CategoryCVC else {
             return UICollectionViewCell()
         }
-        cell.categoryBtn.setTitle(categoryList[indexPath.row], for: .normal)
-        if indexPath.row == 1 {
-            cell.categoryBtn.setTitleColor(.white, for: .normal)
-            cell.categoryBtn.setBackgroundColor(.gray900, for: .normal)
-        }
+        cell.categoryLabel.text = categoryList[indexPath.row]
+        cell.makeRounded(cornerRadius: nil)
+        cell.categoryLabel.sizeToFit()
+        
         return cell
     }
 }
@@ -105,7 +106,7 @@ extension CreateMainVC: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension CreateMainVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: categoryList[indexPath.row].size(withAttributes: nil).width + 28.adjusted, height: 32.adjusted)
+        return CGSize(width: categoryList[indexPath.row].size(withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 13)]).width + 28, height: 32)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
