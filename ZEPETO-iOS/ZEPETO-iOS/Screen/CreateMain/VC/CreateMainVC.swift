@@ -59,7 +59,7 @@ extension CreateMainVC {
 // MARK: - UITableViewDelegate
 extension CreateMainVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let height = (PostDataModel.sampleData[indexPath.row].imgList.count == 2) ? 268 : 207
+        let height = (PostDataModel.sampleData[indexPath.row].imgList.count == 2) ? 268.adjustedH : 207.adjustedH
         
         return CGFloat(height)
     }
