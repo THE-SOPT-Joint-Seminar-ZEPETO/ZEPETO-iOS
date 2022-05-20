@@ -12,6 +12,9 @@ class CreateEditVC: BaseVC {
     // MARK: IBOutlet
     @IBOutlet weak var selectedImgView: UIImageView!
     
+    // MARK: Properties
+    var selectedImg = UIImage()
+    
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,6 @@ class CreateEditVC: BaseVC {
 // MARK: - Custom Methods
 extension CreateEditVC {
     private func setImg() {
-        // TODO: 받아온 이미지로 적용
-        selectedImgView.image = UIImage(named: "image")
+        selectedImgView.image = selectedImg
     }
 }

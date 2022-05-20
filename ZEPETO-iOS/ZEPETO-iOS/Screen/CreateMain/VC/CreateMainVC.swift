@@ -121,9 +121,14 @@ extension CreateMainVC: UICollectionViewDelegateFlowLayout {
 extension CreateMainVC : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
+        guard let createEditVC = UIStoryboard.init(name: Identifiers.CreateEditSB, bundle: nil).instantiateViewController(withIdentifier: CreateEditVC.className) as? CreateEditVC else { return }
+        
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
-            //TODO: 다음 VC에서 이미지 띄워주기
+            createEditVC.selectedImg = image
         }
-        dismiss(animated: true)
+        dismiss(animated: false) {
+            createEditVC.modalPresentationStyle = .fullScreen
+            self.present(createEditVC, animated: true)
+        }
     }
 }
