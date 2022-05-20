@@ -21,11 +21,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             
             // rootVC를 tabBar로 지정
-            window.rootViewController = ZepetoTBC()
+//            window.rootViewController = ZepetoTBC()
+            window.rootViewController = UIStoryboard.init(name: Identifiers.CreateUploadSB, bundle: nil).instantiateViewController(withIdentifier: CreateUploadVC.className) as? CreateUploadVC
 
             self.window = window
             window.makeKeyAndVisible()
-            self.window = window
         }
     }
 
