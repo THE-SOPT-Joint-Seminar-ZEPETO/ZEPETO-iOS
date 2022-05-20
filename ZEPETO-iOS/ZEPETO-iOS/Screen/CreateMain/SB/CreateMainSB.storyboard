@@ -138,8 +138,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="k6q-Ow-TdF"/>
                     <connections>
-                        <outlet property="CategoryCV" destination="hHQ-Tv-Vg3" id="Hr4-ww-YRS"/>
-                        <outlet property="PostTV" destination="dX8-tP-ea3" id="5od-7B-Uy7"/>
+                        <outlet property="categoryCV" destination="hHQ-Tv-Vg3" id="Hr4-ww-YRS"/>
+                        <outlet property="postTV" destination="dX8-tP-ea3" id="5od-7B-Uy7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
