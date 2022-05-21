@@ -102,18 +102,25 @@
                                     <constraint firstItem="yZ3-vw-iB6" firstAttribute="top" secondItem="VvF-TX-YpT" secondAttribute="top" constant="10" id="yEv-zD-AHz"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8A-LJ-yyt">
-                                <rect key="frame" x="10" y="678" width="55" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8A-LJ-yyt">
+                                <rect key="frame" x="18" y="678" width="70" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="sv5-bv-WV0"/>
-                                    <constraint firstAttribute="width" constant="55" id="vsX-Ge-Ur4"/>
+                                    <constraint firstAttribute="width" constant="70" id="vsX-Ge-Ur4"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="더보기"/>
+                                <state key="normal" title="더보기">
+                                    <color key="titleColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <state key="selected">
                                     <color key="titleColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapMoreBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CEn-MK-NHC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jeongkite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIz-Fm-koW">
                                 <rect key="frame" x="18" y="455" width="67" height="18"/>
@@ -200,7 +207,7 @@
                             <constraint firstItem="BIz-Fm-koW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="gwY-uz-I0J"/>
                             <constraint firstItem="VvF-TX-YpT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="haD-5W-E4h"/>
                             <constraint firstItem="VvF-TX-YpT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hin-uI-LVz"/>
-                            <constraint firstItem="I8A-LJ-yyt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="hj2-bv-M7S"/>
+                            <constraint firstItem="I8A-LJ-yyt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="hj2-bv-M7S"/>
                             <constraint firstItem="I8A-LJ-yyt" firstAttribute="top" secondItem="nml-4F-OLW" secondAttribute="bottom" id="mVV-s3-IFh"/>
                             <constraint firstItem="nml-4F-OLW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="njj-uU-LdP"/>
                             <constraint firstAttribute="trailing" secondItem="nml-4F-OLW" secondAttribute="trailing" constant="88" id="ofj-fD-iRq"/>
@@ -210,6 +217,7 @@
                     <navigationItem key="navigationItem" id="EMR-hj-XPt"/>
                     <connections>
                         <outlet property="mainTextLabel" destination="nml-4F-OLW" id="k5q-jy-BTE"/>
+                        <outlet property="moreBtn" destination="I8A-LJ-yyt" id="jKZ-NG-Juy"/>
                         <outlet property="profileImgView" destination="NO2-CN-s0w" id="S6A-cZ-K1q"/>
                         <outlet property="usernameTextLabel" destination="BIz-Fm-koW" id="0A9-pi-b6K"/>
                     </connections>
