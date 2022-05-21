@@ -23,7 +23,7 @@ class CreateEditVC: BaseVC {
 
     // MARK: IBAction
     @IBAction func tapCloseBtn(_ sender: Any) {
-        dismiss(animated: true)
+        self.dismiss(animated: true)
     }
     
     @IBAction func tapNextBtn(_ sender: Any) {
