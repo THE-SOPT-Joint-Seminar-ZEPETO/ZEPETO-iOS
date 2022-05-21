@@ -9,16 +9,23 @@ import UIKit
 
 class FeedVC: BaseVC {
     
+    // MARK: IBOutlet
     @IBOutlet weak var mainTextLabel: UILabel!
+    @IBOutlet weak var profileImgView: UIImageView!
     
-
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
     }
-    
-    func configUI() {
-//        mainTextLabel.lineBreakMode = .byCharWrapping
+}
+
+// MARK: - UI
+extension FeedVC {
+    private func configUI() {
+        profileImgView.layer.borderWidth = 2
+        profileImgView.layer.borderColor = UIColor.white.cgColor
+        profileImgView.layer.cornerRadius = profileImgView.bounds.width / 2
     }
 }
 
