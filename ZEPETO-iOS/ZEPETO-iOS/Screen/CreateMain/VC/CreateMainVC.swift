@@ -123,8 +123,8 @@ extension CreateMainVC : UIImagePickerControllerDelegate, UINavigationController
         
         guard let createEditVC = UIStoryboard.init(name: Identifiers.CreateEditSB, bundle: nil).instantiateViewController(withIdentifier: CreateEditVC.className) as? CreateEditVC else { return }
         
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
-            createEditVC.selectedImg = image
+        if let img = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            createEditVC.selectedImg = img
         }
         dismiss(animated: false) {
             createEditVC.modalPresentationStyle = .fullScreen
