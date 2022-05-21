@@ -211,6 +211,7 @@
                     <connections>
                         <outlet property="mainTextLabel" destination="nml-4F-OLW" id="k5q-jy-BTE"/>
                         <outlet property="profileImgView" destination="NO2-CN-s0w" id="S6A-cZ-K1q"/>
+                        <outlet property="usernameTextLabel" destination="BIz-Fm-koW" id="0A9-pi-b6K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
