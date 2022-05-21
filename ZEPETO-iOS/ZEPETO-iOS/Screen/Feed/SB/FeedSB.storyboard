@@ -103,7 +103,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8A-LJ-yyt">
-                                <rect key="frame" x="18" y="678" width="70" height="34"/>
+                                <rect key="frame" x="18" y="727" width="70" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="sv5-bv-WV0"/>
@@ -123,13 +123,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jeongkite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIz-Fm-koW">
-                                <rect key="frame" x="18" y="455" width="67" height="18"/>
+                                <rect key="frame" x="18" y="504" width="67" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nml-4F-OLW">
-                                <rect key="frame" x="18" y="481" width="269" height="197"/>
+                                <rect key="frame" x="18" y="530" width="269" height="197"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -200,7 +200,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BUl-8l-uhq" secondAttribute="trailing" constant="10" id="5Ea-Zy-Vo5"/>
                             <constraint firstItem="nml-4F-OLW" firstAttribute="top" secondItem="BIz-Fm-koW" secondAttribute="bottom" constant="8" id="5tB-D8-ki0"/>
                             <constraint firstItem="3Cy-af-eUT" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="8fP-uC-Pb9"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="I8A-LJ-yyt" secondAttribute="bottom" constant="66" id="R1A-EP-xA0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="I8A-LJ-yyt" secondAttribute="bottom" constant="17" id="R1A-EP-xA0"/>
                             <constraint firstItem="3Cy-af-eUT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="RNB-Pz-m53"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VvF-TX-YpT" secondAttribute="trailing" id="VTy-HY-9uf"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3Cy-af-eUT" secondAttribute="trailing" id="YVP-Or-qtB"/>

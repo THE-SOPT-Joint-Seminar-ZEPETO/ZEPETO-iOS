@@ -21,8 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             
             // rootVC를 tabBar로 지정
-//            window.rootViewController = ZepetoTBC()
-            window.rootViewController = UIStoryboard.init(name: Identifiers.FeedSB, bundle: nil).instantiateViewController(withIdentifier: FeedVC.className) as? FeedVC
+            window.rootViewController = ZepetoTBC()
 
             self.window = window
             window.makeKeyAndVisible()
