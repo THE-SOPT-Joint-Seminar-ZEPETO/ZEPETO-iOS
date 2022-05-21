@@ -78,7 +78,7 @@
                                             <constraint firstAttribute="bottom" secondItem="9uU-x1-hrN" secondAttribute="bottom" constant="8" id="sxg-ob-WXO"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icSearchLine" translatesAutoresizingMaskIntoConstraints="NO" id="L3T-vm-Tch">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icSearchLineWhite" translatesAutoresizingMaskIntoConstraints="NO" id="L3T-vm-Tch">
                                         <rect key="frame" x="327" y="12" width="36" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="AHw-bg-sVc"/>
@@ -139,7 +139,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icSearchLine" width="36" height="36"/>
+        <image name="icSearchLineWhite" width="36" height="36"/>
         <image name="skyBackground" width="800" height="1094"/>
     </resources>
 </document>
