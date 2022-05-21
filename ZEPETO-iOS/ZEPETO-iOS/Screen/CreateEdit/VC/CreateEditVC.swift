@@ -8,7 +8,7 @@
 import UIKit
 
 class CreateEditVC: BaseVC {
-
+    
     // MARK: IBOutlet
     @IBOutlet weak var selectedImgView: UIImageView!
     
@@ -20,7 +20,7 @@ class CreateEditVC: BaseVC {
         super.viewDidLoad()
         setImg()
     }
-
+    
     // MARK: IBAction
     @IBAction func tapCloseBtn(_ sender: Any) {
         self.dismiss(animated: true)
@@ -35,5 +35,9 @@ class CreateEditVC: BaseVC {
 extension CreateEditVC {
     private func setImg() {
         selectedImgView.image = selectedImg
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
