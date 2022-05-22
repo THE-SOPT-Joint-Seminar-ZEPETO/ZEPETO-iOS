@@ -29,7 +29,7 @@ class FeedVC: BaseVC {
     @IBAction func tapMoreBtn(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         
-        if sender.isSelected {
+        if !sender.isSelected {
             mainTextLabel.numberOfLines = 0
             mainTextLabel.invalidateIntrinsicContentSize()
             moreBtn.setTitle("숨기기", for: .normal)
