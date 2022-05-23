@@ -31,12 +31,12 @@ class FeedVC: BaseVC {
     // MARK: IBAction
     @IBAction func tapMoreBtn(_ sender: UIButton) {
         if sender.isSelected {
-            mainTextLabel.numberOfLines = 0
-            mainTextLabel.invalidateIntrinsicContentSize()
+            mainContentLabel.numberOfLines = 0
+            mainContentLabel.invalidateIntrinsicContentSize()
             moreBtn.setTitle("숨기기", for: .normal)
         } else {
             configMainTextLabelShort()
-            mainTextLabel.invalidateIntrinsicContentSize()
+            mainContentLabel.invalidateIntrinsicContentSize()
             moreBtn.setTitle("더보기", for: .normal)
         }
         sender.isSelected.toggle()
@@ -50,10 +50,6 @@ extension FeedVC {
         profileImgView.layer.borderColor = UIColor.white.cgColor
         profileImgView.layer.cornerRadius = profileImgView.bounds.width / 2
     }
-}
-
-// MARK: - Custom Methods
-extension FeedVC {
     
     /// status bar를 흰색으로 바꿔주는 메서드
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -62,13 +58,13 @@ extension FeedVC {
     
     /// mainTextLabel을 2줄로 만드는 메서드
     private func configMainTextLabelShort() {
-        mainTextLabel.numberOfLines = 2
-        mainTextLabel.lineBreakMode = .byTruncatingTail
+        mainContentLabel.numberOfLines = 2
+        mainContentLabel.lineBreakMode = .byTruncatingTail
     }
 
     /// mainTextLabel이 2줄 이하일 때 더보기 버튼을 숨기는 메서드
     private func hideMoreBtn() {
-        let lineCount = mainTextLabel.maxNumberOfLines
+        let lineCount = mainContentLabel.maxNumberOfLines
         if lineCount <= 2 {
             moreBtn.isHidden = true
         }
