@@ -216,10 +216,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="EMR-hj-XPt"/>
                     <connections>
-                        <outlet property="mainTextLabel" destination="nml-4F-OLW" id="k5q-jy-BTE"/>
+                        <outlet property="mainContentLabel" destination="nml-4F-OLW" id="Ypy-Wf-NCU"/>
                         <outlet property="moreBtn" destination="I8A-LJ-yyt" id="jKZ-NG-Juy"/>
                         <outlet property="profileImgView" destination="NO2-CN-s0w" id="S6A-cZ-K1q"/>
-                        <outlet property="usernameTextLabel" destination="BIz-Fm-koW" id="0A9-pi-b6K"/>
+                        <outlet property="userNameLabel" destination="BIz-Fm-koW" id="dhc-58-oRf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

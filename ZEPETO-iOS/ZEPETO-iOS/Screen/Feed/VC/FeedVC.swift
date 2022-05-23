@@ -10,8 +10,8 @@ import UIKit
 class FeedVC: BaseVC {
     
     // MARK: IBOutlet
-    @IBOutlet weak var usernameTextLabel: UILabel!
-    @IBOutlet weak var mainTextLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var mainContentLabel: UILabel!
     @IBOutlet weak var profileImgView: UIImageView!
     @IBOutlet weak var moreBtn: UIButton!
     
