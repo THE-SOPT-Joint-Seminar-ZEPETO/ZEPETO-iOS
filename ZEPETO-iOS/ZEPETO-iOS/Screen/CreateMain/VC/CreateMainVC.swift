@@ -126,7 +126,7 @@ extension CreateMainVC : UIImagePickerControllerDelegate, UINavigationController
         if let img = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             createEditVC.selectedImg = img
         }
-        dismiss(animated: false) {
+        self.dismiss(animated: false) {
             createEditVC.modalPresentationStyle = .fullScreen
             self.present(createEditVC, animated: true)
         }
