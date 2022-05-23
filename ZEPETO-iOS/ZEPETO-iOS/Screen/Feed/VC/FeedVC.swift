@@ -19,6 +19,9 @@ class FeedVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
+        userNameLabel.textDropShadow()
+        mainContentLabel.textDropShadow()
+        configMainTextLabelShort()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -46,10 +49,6 @@ extension FeedVC {
         profileImgView.layer.borderWidth = 2
         profileImgView.layer.borderColor = UIColor.white.cgColor
         profileImgView.layer.cornerRadius = profileImgView.bounds.width / 2
-        
-        usernameTextLabel.textDropShadow()
-        mainTextLabel.textDropShadow()
-        configMainTextLabelShort()
     }
 }
 
