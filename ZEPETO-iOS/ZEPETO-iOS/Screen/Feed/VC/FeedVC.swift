@@ -25,7 +25,7 @@ class FeedVC: BaseVC {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        configMoreBtnHide()
+        hideMoreBtn()
     }
     
     // MARK: IBAction
@@ -67,7 +67,7 @@ extension FeedVC {
     }
 
     /// mainTextLabel이 2줄 이하일 때 더보기 버튼을 숨기는 메서드
-    private func configMoreBtnHide() {
+    private func hideMoreBtn() {
         let lineCount = mainTextLabel.maxNumberOfLines
         if lineCount <= 2 {
             moreBtn.isHidden = true
