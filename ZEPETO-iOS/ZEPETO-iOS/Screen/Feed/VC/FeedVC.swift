@@ -36,7 +36,7 @@ class FeedVC: BaseVC {
             mainTextLabel.invalidateIntrinsicContentSize()
             moreBtn.setTitle("더보기", for: .normal)
         }
-        sender.isSelected = !sender.isSelected
+        sender.isSelected.toggle()
     }
 }
 
