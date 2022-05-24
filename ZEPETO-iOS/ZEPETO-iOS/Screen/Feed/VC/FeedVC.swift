@@ -23,6 +23,7 @@ class FeedVC: BaseVC {
         mainContentLabel.textDropShadow()
         configMainTextLabelShort()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         hideMoreBtn()
