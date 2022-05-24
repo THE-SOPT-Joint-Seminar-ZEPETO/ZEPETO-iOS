@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="du6-si-s3h">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="du6-si-s3h">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ia-Og-lXu">
@@ -121,6 +121,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gCy-0G-4qG" secondAttribute="bottom" constant="26" id="AYh-hS-aFx"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FKX-OG-eRn" secondAttribute="trailing" constant="18" id="DcI-lq-Zq3"/>
@@ -139,7 +140,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="selectedImgView" destination="du6-si-s3h" id="8NX-8z-59X"/>
+                        <outlet property="selectedImgView" destination="du6-si-s3h" id="2X3-E8-RhM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

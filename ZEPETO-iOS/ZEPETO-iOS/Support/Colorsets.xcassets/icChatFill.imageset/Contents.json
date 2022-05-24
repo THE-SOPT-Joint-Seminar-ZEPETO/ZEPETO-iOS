@@ -1,9 +1,9 @@
 {
   "images" : [
     {
+      "scale" : "1x",
       "idiom" : "universal",
-      "filename" : "icChatFill.png",
-      "scale" : "1x"
+      "filename" : "icChatFill.png"
     },
     {
       "scale" : "2x",
@@ -12,8 +12,8 @@
     },
     {
       "scale" : "3x",
-      "filename" : "icChatFill@3x.png",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "icChatFill@3x.png"
     }
   ],
   "info" : {
