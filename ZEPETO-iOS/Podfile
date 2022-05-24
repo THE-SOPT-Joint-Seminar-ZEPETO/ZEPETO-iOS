@@ -7,5 +7,5 @@ target 'ZEPETO-iOS' do
 
   # Pods for ZEPETO-iOS
   pod 'Alamofire'
-
+  pod 'lottie-ios'
 end

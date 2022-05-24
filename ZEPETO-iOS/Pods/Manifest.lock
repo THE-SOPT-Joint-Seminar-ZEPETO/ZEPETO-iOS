@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (5.6.1)
+  - lottie-ios (3.3.0)
 
 DEPENDENCIES:
   - Alamofire
+  - lottie-ios
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - lottie-ios
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
 
-PODFILE CHECKSUM: f488312634372a807ac93420840236925e554abb
+PODFILE CHECKSUM: 6704bc134ca34dd53eca0406a7a1bab50416cd1a
 
 COCOAPODS: 1.11.3
