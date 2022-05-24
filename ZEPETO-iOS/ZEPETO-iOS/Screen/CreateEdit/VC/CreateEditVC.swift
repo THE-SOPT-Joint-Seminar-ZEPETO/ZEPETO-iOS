@@ -8,19 +8,22 @@
 import UIKit
 
 class CreateEditVC: BaseVC {
-
+    
     // MARK: IBOutlet
     @IBOutlet weak var selectedImgView: UIImageView!
+    
+    // MARK: Properties
+    var selectedImg = UIImage()
     
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setImg()
     }
-
+    
     // MARK: IBAction
     @IBAction func tapCloseBtn(_ sender: Any) {
-        dismiss(animated: true)
+        self.dismiss(animated: true)
     }
     
     @IBAction func tapNextBtn(_ sender: Any) {
@@ -31,7 +34,10 @@ class CreateEditVC: BaseVC {
 // MARK: - Custom Methods
 extension CreateEditVC {
     private func setImg() {
-        // TODO: 받아온 이미지로 적용
-        selectedImgView.image = UIImage(named: "image")
+        selectedImgView.image = selectedImg
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
