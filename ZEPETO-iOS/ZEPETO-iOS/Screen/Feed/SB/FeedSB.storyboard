@@ -136,7 +136,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUl-8l-uhq">
-                                <rect key="frame" x="317" y="378" width="48" height="334"/>
+                                <rect key="frame" x="317" y="427" width="48" height="334"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icFeedChatFill" translatesAutoresizingMaskIntoConstraints="NO" id="QUk-Lg-PBG">
                                         <rect key="frame" x="0.0" y="138" width="48" height="62"/>
@@ -211,7 +211,7 @@
                             <constraint firstItem="I8A-LJ-yyt" firstAttribute="top" secondItem="nml-4F-OLW" secondAttribute="bottom" id="mVV-s3-IFh"/>
                             <constraint firstItem="nml-4F-OLW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="njj-uU-LdP"/>
                             <constraint firstAttribute="trailing" secondItem="nml-4F-OLW" secondAttribute="trailing" constant="88" id="ofj-fD-iRq"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="BUl-8l-uhq" secondAttribute="bottom" constant="66" id="vzg-F4-bpI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="BUl-8l-uhq" secondAttribute="bottom" constant="17" id="vzg-F4-bpI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EMR-hj-XPt"/>
