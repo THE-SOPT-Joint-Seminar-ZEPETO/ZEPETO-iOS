@@ -19,8 +19,6 @@ class FeedVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
-        userNameLabel.textDropShadow()
-        mainContentLabel.textDropShadow()
         configMainTextLabelShort()
     }
     
@@ -50,6 +48,8 @@ extension FeedVC {
         profileImgView.layer.borderWidth = 2
         profileImgView.layer.borderColor = UIColor.white.cgColor
         profileImgView.layer.cornerRadius = profileImgView.bounds.width / 2
+        userNameLabel.textDropShadow()
+        mainContentLabel.textDropShadow()
     }
     
     /// status bar를 흰색으로 바꿔주는 메서드
