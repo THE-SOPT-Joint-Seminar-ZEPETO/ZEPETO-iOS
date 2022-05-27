@@ -31,7 +31,6 @@ class CreateEditVC: BaseVC {
         
         uploadVC.selectedImg = selectedImgView.image ?? selectedImg
         self.navigationController?.pushViewController(uploadVC, animated: true)
-
     }
 }
 
