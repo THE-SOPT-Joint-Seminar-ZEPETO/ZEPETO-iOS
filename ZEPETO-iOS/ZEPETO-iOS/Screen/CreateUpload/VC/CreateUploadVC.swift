@@ -25,6 +25,7 @@ class CreateUploadVC: BaseVC {
         setDelegate()
     }
     
+    // MARK: IBAction
     @IBAction func tapBackBtn(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
