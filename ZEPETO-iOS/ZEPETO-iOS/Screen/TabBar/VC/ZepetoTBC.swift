@@ -13,6 +13,7 @@ class ZepetoTBC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configTabBar()
+        addObserver()
     }
 }
 
@@ -52,6 +53,17 @@ extension ZepetoTBC {
         tabBar.backgroundColor = .white
         tabBar.tintColor = .gray900
         tabBar.unselectedItemTintColor = .gray900
+    }
+    
+    private func addObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(setTabBarIndex), name: NSNotification.Name("completeBtnDidTap"), object: nil)
+    }
+    
+    @objc func setTabBarIndex() {
+        self.selectedIndex = 3
+        tabBar.backgroundColor = .black
+        tabBar.tintColor = .white
+        tabBar.unselectedItemTintColor = .white
     }
 }
 
