@@ -22,12 +22,16 @@ class CreateEditVC: BaseVC {
     }
     
     // MARK: IBAction
-    @IBAction func tapCloseBtn(_ sender: Any) {
+    @IBAction func tapCloseBtn(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
     
-    @IBAction func tapNextBtn(_ sender: Any) {
-        // TODO: 다음 VC로 이미지 전달, push로 구현
+    @IBAction func tapNextBtn(_ sender: UIButton) {
+        guard let uploadVC = UIStoryboard.init(name: Identifiers.CreateUploadSB, bundle: nil).instantiateViewController(withIdentifier: CreateUploadVC.className) as? CreateUploadVC else { return }
+        
+        uploadVC.selectedImg = selectedImgView.image ?? selectedImg
+        self.navigationController?.pushViewController(uploadVC, animated: true)
+
     }
 }
 
