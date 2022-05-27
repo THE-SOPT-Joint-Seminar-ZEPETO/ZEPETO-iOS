@@ -12,12 +12,20 @@ class CreateUploadVC: BaseVC {
     // MARK: IBOutlet
     @IBOutlet weak var mainTextView: UITextView!
     @IBOutlet weak var darkBgView: UIView!
+    @IBOutlet weak var contentImgView: UIImageView!
+    
+    // MARK: Properties
+    var selectedImg = UIImage()
     
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
         setDelegate()
+    }
+    
+    @IBAction func tapBackBtn(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 
@@ -26,6 +34,8 @@ extension CreateUploadVC {
     private func configUI() {
         mainTextView.textColor = .gray300
         darkBgView.isHidden = true
+        contentImgView.makeRounded(cornerRadius: 10.adjusted)
+        contentImgView.image = selectedImg
     }
 }
 
