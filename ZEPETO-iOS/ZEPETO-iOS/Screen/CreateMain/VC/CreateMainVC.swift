@@ -118,17 +118,20 @@ extension CreateMainVC: UICollectionViewDelegateFlowLayout {
 }
 
 // MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
-extension CreateMainVC : UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+extension CreateMainVC : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        guard let createEditVC = UIStoryboard.init(name: Identifiers.CreateEditSB, bundle: nil).instantiateViewController(withIdentifier: CreateEditVC.className) as? CreateEditVC else { return }
+        guard let creatEditVC = UIStoryboard.init(name: Identifiers.CreateEditSB, bundle: nil).instantiateViewController(withIdentifier: CreateEditVC.className) as? CreateEditVC else { return }
         
         if let img = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            createEditVC.selectedImg = img
+            creatEditVC.selectedImg = img
         }
+        
         self.dismiss(animated: false) {
-            createEditVC.modalPresentationStyle = .fullScreen
-            self.present(createEditVC, animated: true)
+            let creatEditNC = UINavigationController(rootViewController: creatEditVC)
+            creatEditNC.isNavigationBarHidden = true
+            creatEditNC.modalPresentationStyle = .fullScreen
+            self.present(creatEditNC, animated: true)
         }
     }
 }
