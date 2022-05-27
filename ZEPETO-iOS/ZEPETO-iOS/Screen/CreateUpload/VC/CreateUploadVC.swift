@@ -13,6 +13,7 @@ class CreateUploadVC: BaseVC {
     @IBOutlet weak var mainTextView: UITextView!
     @IBOutlet weak var darkBgView: UIView!
     @IBOutlet weak var contentImgView: UIImageView!
+    @IBOutlet weak var completeBtn: UIButton!
     
     // MARK: Properties
     var selectedImg = UIImage()
@@ -27,11 +28,18 @@ class CreateUploadVC: BaseVC {
     @IBAction func tapBackBtn(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func tapCompleteBtn(_ sender: UIButton) {
+        NotificationCenter.default.post(name: NSNotification.Name("completeBtnDidTap"), object: contentImgView.image, userInfo: nil)
+        
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
 // MARK: - UI
 extension CreateUploadVC {
     private func configUI() {
+        completeBtn.makeRounded(cornerRadius: 6.adjusted)
         mainTextView.textColor = .gray300
         darkBgView.isHidden = true
         contentImgView.makeRounded(cornerRadius: 10.adjusted)
