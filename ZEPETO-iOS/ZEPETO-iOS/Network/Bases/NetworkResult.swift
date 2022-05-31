@@ -7,6 +7,10 @@
 
 import Foundation
 
+/*
+ NetworkResult : 네트워크 결과를 나눔
+ */
+
 enum NetworkResult<T> {
     case success(T)
     case requestErr(T)
