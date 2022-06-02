@@ -16,6 +16,7 @@ class CreateMainVC: BaseVC {
     // MARK: Properties
     var categoryList = ["MY", "HOT", "NEW", "템플릿", "커플", "Photo"]
     let imagePicker = UIImagePickerController()
+    var mainData: [MainImagesGetResModel] = []
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -23,6 +24,9 @@ class CreateMainVC: BaseVC {
         setPostTV()
         setCategoryCV()
         setImagePicker()
+        
+        /// 이미지 데이터 조회
+        imagesGet()
     }
     
     // MARK: IBAction
@@ -60,7 +64,7 @@ extension CreateMainVC {
 // MARK: - UITableViewDelegate
 extension CreateMainVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let height = (PostDataModel.sampleData[indexPath.row].imgList.count == 2) ? 268.adjustedH : 207.adjustedH
+        let height = (mainData[indexPath.row].images.count == 2) ? 268.adjustedH : 207.adjustedH
         
         return height
     }
@@ -69,13 +73,13 @@ extension CreateMainVC: UITableViewDelegate {
 // MARK: - UITableViewDataSource
 extension CreateMainVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return PostDataModel.sampleData.count
+        return mainData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTVC.className, for: indexPath) as? PostTVC else { return UITableViewCell() }
         
-        cell.setData(PostDataModel.sampleData[indexPath.row])
+        cell.setData(mainData[indexPath.row])
         
         return cell
     }
@@ -132,6 +136,28 @@ extension CreateMainVC : UIImagePickerControllerDelegate, UINavigationController
             creatEditNC.isNavigationBarHidden = true
             creatEditNC.modalPresentationStyle = .fullScreen
             self.present(creatEditNC, animated: true)
+        }
+    }
+}
+
+// MARK: - Network
+extension CreateMainVC {
+    private func imagesGet() {
+        MainAPI.shared.imagesGetAPI() { networkResult in
+            switch networkResult {
+            case .success(let res):
+                if let data = res as? [MainImagesGetResModel] {
+                    DispatchQueue.main.async {
+                        self.mainData = data
+                        self.postTV.reloadData()
+                    }
+                }
+            case .requestErr(let res):
+                print(res)
+            default:
+                print("networkFail")
+            }
+            
         }
     }
 }
