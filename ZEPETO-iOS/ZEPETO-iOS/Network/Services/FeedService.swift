@@ -16,30 +16,35 @@ import UIKit
 
 enum FeedService {
 //    case uploadPost(content: String, image: UIImage)
+    case getFeed
 }
 
 extension FeedService: TargetType {
     var method: HTTPMethod {
         switch self {
-        
+        case .getFeed:
+            return .get
         }
     }
     
     var path: String {
         switch self {
-            
+        case .getFeed:
+            return "/feed"
         }
     }
     
     var parameters: RequestParams {
         switch self {
-            
+        case .getFeed:
+            return .requestPlain
         }
     }
     
     var header: HeaderType {
         switch self {
-            
+        case .getFeed:
+            return .basic
         }
     }
 }
