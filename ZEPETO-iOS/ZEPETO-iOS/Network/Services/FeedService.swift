@@ -5,7 +5,6 @@
 //  Created by EUNJU on 2022/05/31.
 //
 
-import Foundation
 import Alamofire
 import UIKit
 
@@ -15,7 +14,6 @@ import UIKit
  */
 
 enum FeedService {
-//    case uploadPost(content: String, image: UIImage)
     case getFeed
 }
 
