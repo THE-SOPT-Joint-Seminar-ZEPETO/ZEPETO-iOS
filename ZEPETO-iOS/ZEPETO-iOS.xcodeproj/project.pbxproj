@@ -67,6 +67,7 @@
 		84DB19632836434600F15BF3 /* CreateEditSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DB19622836434600F15BF3 /* CreateEditSB.storyboard */; };
 		84DB19652836435C00F15BF3 /* CreateEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB19642836435C00F15BF3 /* CreateEditVC.swift */; };
 		89CFF3AFF7880FE9E6B68D80 /* Pods_ZEPETO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */; };
+		DDB86AA02849122A00FB6240 /* FeedGetResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB86A9F2849122A00FB6240 /* FeedGetResModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +135,7 @@
 		84DB19622836434600F15BF3 /* CreateEditSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEditSB.storyboard; sourceTree = "<group>"; };
 		84DB19642836435C00F15BF3 /* CreateEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditVC.swift; sourceTree = "<group>"; };
 		A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEPETO-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DDB86A9F2849122A00FB6240 /* FeedGetResModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedGetResModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,6 +496,7 @@
 		77CC82B82845A3E40027CB71 /* APIModels */ = {
 			isa = PBXGroup;
 			children = (
+				DDB86A9F2849122A00FB6240 /* FeedGetResModel.swift */,
 			);
 			path = APIModels;
 			sourceTree = "<group>";
@@ -711,6 +714,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB86AA02849122A00FB6240 /* FeedGetResModel.swift in Sources */,
 				77CC82C22845AA4C0027CB71 /* NetworkConstants.swift in Sources */,
 				84DB19652836435C00F15BF3 /* CreateEditVC.swift in Sources */,
 				774BF6DF28326E0300AA71F1 /* CreateNC.swift in Sources */,
