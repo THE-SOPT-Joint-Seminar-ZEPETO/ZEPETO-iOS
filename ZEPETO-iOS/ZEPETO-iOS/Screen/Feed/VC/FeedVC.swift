@@ -78,7 +78,6 @@ extension FeedVC {
 extension FeedVC {
     private func getFeed() {
         FeedAPI.shared.feedGetAPI() { networkResult in
-            print("✨✨✨✨✨✨✨")
             switch networkResult {
             case .success(let res):
                 if let data = res as? FeedGetResModel {
@@ -88,10 +87,10 @@ extension FeedVC {
                     self.userNameLabel.text = userName
                     let contentImageURL = URL(string: data.image)
                     self.contentImgView.load(url: contentImageURL!)
-                    guard let content = data.content else { return }
-                    self.mainContentLabel.text = content
+                    if let content = data.content {
+                        self.mainContentLabel.text = content
+                    }
                 }
-                
             case .requestErr(let res):
                 print(res)
             default:
