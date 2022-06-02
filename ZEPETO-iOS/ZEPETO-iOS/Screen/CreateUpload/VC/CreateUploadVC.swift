@@ -75,7 +75,7 @@ extension CreateUploadVC: UITextViewDelegate {
     }
 }
 
-// MARK: Network
+// MARK: - Network
 extension CreateUploadVC {
     private func createPost(content: String, image: UIImage) {
         FeedAPI.shared.createPostAPI(content: content, image: image) { networkResult in
