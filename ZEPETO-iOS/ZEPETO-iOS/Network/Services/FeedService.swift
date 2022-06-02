@@ -15,31 +15,52 @@ import UIKit
  */
 
 enum FeedService {
-//    case uploadPost(content: String, image: UIImage)
+    case uploadPost(content: String, image: UIImage)
 }
 
 extension FeedService: TargetType {
-    var method: HTTPMethod {
-        switch self {
-        
-        }
-    }
     
     var path: String {
         switch self {
-            
+        case .uploadPost:
+            return "/feed"
         }
     }
     
-    var parameters: RequestParams {
+    var method: HTTPMethod {
         switch self {
-            
+        case .uploadPost:
+            return .post
+        
         }
     }
     
     var header: HeaderType {
         switch self {
+        case .uploadPost:
+            return .multiPart
+        }
+    }
+    
+    var multipart: MultipartFormData {
+        switch self {
+        case .uploadPost(let content, let image):
+            let multiPart = MultipartFormData()
             
+            let contentData = content.data(using: .utf8) ?? Data()
+            let imageData = image.pngData() ?? Data()
+            
+            multiPart.append(contentData, withName: "content")
+            multiPart.append(imageData, withName: "image", fileName: "postImage.png", mimeType: "image/png")
+            
+            return multiPart
+        }
+    }
+    
+    var parameters: RequestParams {
+        switch self {
+        case .uploadPost:
+            return .requestPlain
         }
     }
 }
