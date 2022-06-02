@@ -90,6 +90,7 @@ extension FeedVC {
                     if let content = data.content {
                         self.mainContentLabel.text = content
                     }
+                    self.hideMoreBtn()
                 }
             case .requestErr(let res):
                 print(res)
