@@ -5,7 +5,6 @@
 //  Created by EUNJU on 2022/05/31.
 //
 
-import Foundation
 import UIKit
 import Alamofire
 
@@ -19,4 +18,21 @@ class FeedAPI: BaseAPI {
     static let shared = FeedAPI()
     
     private override init() { }
+    
+    /// [GET] 피드 조회
+    func feedGetAPI(completion: @escaping (NetworkResult<Any>) -> (Void)) {
+        AFmanager.request(FeedService.getFeed).responseData { response in
+            switch response.result {
+            case .success:
+                guard let statusCode = response.response?.statusCode else { return }
+                guard let data = response.data else { return }
+                print(data)
+                let networkResult = self.judgeStatus(by: statusCode, data, FeedGetResModel.self)
+                completion(networkResult)
+                
+            case .failure(let err):
+                print(err.localizedDescription)
+            }
+        }
+    }
 }
