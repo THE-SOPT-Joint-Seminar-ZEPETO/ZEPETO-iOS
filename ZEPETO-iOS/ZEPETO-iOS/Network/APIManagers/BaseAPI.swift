@@ -32,9 +32,9 @@ class BaseAPI {
         else { return .pathErr }
         print(decodedData)
         switch statusCode {
-        case 200:
+        case 200...201:
             return .success(decodedData.data ?? "None-Data")
-        case 201..<300:
+        case 202..<300:
             return .success(decodedData.status)
         case 400..<500:
             return .requestErr(decodedData.status)
