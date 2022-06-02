@@ -68,6 +68,7 @@
 		84DB19652836435C00F15BF3 /* CreateEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB19642836435C00F15BF3 /* CreateEditVC.swift */; };
 		89CFF3AFF7880FE9E6B68D80 /* Pods_ZEPETO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */; };
 		DDB86AA02849122A00FB6240 /* FeedGetResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB86A9F2849122A00FB6240 /* FeedGetResModel.swift */; };
+		DDB86AA228492C5200FB6240 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB86AA128492C5200FB6240 /* UIImageView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,7 @@
 		84DB19642836435C00F15BF3 /* CreateEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditVC.swift; sourceTree = "<group>"; };
 		A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEPETO-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DDB86A9F2849122A00FB6240 /* FeedGetResModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedGetResModel.swift; sourceTree = "<group>"; };
+		DDB86AA128492C5200FB6240 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 				774BF69A2832478200AA71F1 /* UITextView+.swift */,
 				774BF69C283247CD00AA71F1 /* Adjusted+.swift */,
 				774BF6EC2832777C00AA71F1 /* UITabBar+.swift */,
+				DDB86AA128492C5200FB6240 /* UIImageView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -750,6 +753,7 @@
 				774BF6842832440A00AA71F1 /* BaseVC.swift in Sources */,
 				77CC82C62845AFEE0027CB71 /* BaseAPI.swift in Sources */,
 				774BF6E928326EC600AA71F1 /* MypageVC.swift in Sources */,
+				DDB86AA228492C5200FB6240 /* UIImageView+.swift in Sources */,
 				774BF6992832473800AA71F1 /* UILabel+.swift in Sources */,
 				774BF6C82832530D00AA71F1 /* StoryboardRepresentation.swift in Sources */,
 				84CB148928334C2D0028A17F /* CategoryCVC.swift in Sources */,
