@@ -20,8 +20,8 @@ class FeedVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
-        addObserver()
         configMainTextLabelShort()
+        getFeed()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -74,15 +74,29 @@ extension FeedVC {
     }
 }
 
-// MARK: - Custom Methods
+// MARK: - Network
 extension FeedVC {
-    private func addObserver() {
-        NotificationCenter.default.addObserver(self, selector: #selector(setContentImg), name: NSNotification.Name("completeBtnDidTap"), object: nil)
-    }
-    
-    @objc func setContentImg(_ notification: Notification) {
-        if let receivedImg = notification.object as? UIImage {
-            self.contentImgView.image = receivedImg
+    private func getFeed() {
+        FeedAPI.shared.feedGetAPI() { networkResult in
+            print("✨✨✨✨✨✨✨")
+            switch networkResult {
+            case .success(let res):
+                if let data = res as? FeedGetResModel {
+                    let profileImageURL = URL(string: data.userProfileImage)
+                    self.profileImgView.load(url: profileImageURL!)
+                    let userName = data.userName
+                    self.userNameLabel.text = userName
+                    let contentImageURL = URL(string: data.image)
+                    self.contentImgView.load(url: contentImageURL!)
+                    guard let content = data.content else { return }
+                    self.mainContentLabel.text = content
+                }
+                
+            case .requestErr(let res):
+                print(res)
+            default:
+                print("networkFail")
+            }
         }
     }
 }
