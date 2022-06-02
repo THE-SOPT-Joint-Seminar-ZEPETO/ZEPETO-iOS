@@ -16,7 +16,7 @@ class CreateMainVC: BaseVC {
     // MARK: Properties
     var categoryList = ["MY", "HOT", "NEW", "템플릿", "커플", "Photo"]
     let imagePicker = UIImagePickerController()
-    var mainData: [MainImagesGetResModel] = []
+    var postList: [MainImagesGetResModel] = []
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -25,7 +25,7 @@ class CreateMainVC: BaseVC {
         setCategoryCV()
         setImagePicker()
         
-        /// 이미지 데이터 조회
+        /// 이미지 데이터 조회 서버 통신
         imagesGet()
     }
     
@@ -64,7 +64,7 @@ extension CreateMainVC {
 // MARK: - UITableViewDelegate
 extension CreateMainVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let height = (mainData[indexPath.row].images.count == 2) ? 268.adjustedH : 207.adjustedH
+        let height = (postList[indexPath.row].images.count == 2) ? 268.adjustedH : 207.adjustedH
         
         return height
     }
@@ -73,13 +73,13 @@ extension CreateMainVC: UITableViewDelegate {
 // MARK: - UITableViewDataSource
 extension CreateMainVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mainData.count
+        return postList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: PostTVC.className, for: indexPath) as? PostTVC else { return UITableViewCell() }
         
-        cell.setData(mainData[indexPath.row])
+        cell.setData(postList[indexPath.row])
         
         return cell
     }
@@ -148,7 +148,7 @@ extension CreateMainVC {
             case .success(let res):
                 if let data = res as? [MainImagesGetResModel] {
                     DispatchQueue.main.async {
-                        self.mainData = data
+                        self.postList = data
                         self.postTV.reloadData()
                     }
                 }
