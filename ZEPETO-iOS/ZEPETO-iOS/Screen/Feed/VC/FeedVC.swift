@@ -20,7 +20,6 @@ class FeedVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
-        addObserver()
         configMainTextLabelShort()
     }
     
@@ -70,19 +69,6 @@ extension FeedVC {
         let lineCount = mainContentLabel.maxNumberOfLines
         if lineCount <= 2 {
             moreBtn.isHidden = true
-        }
-    }
-}
-
-// MARK: - Custom Methods
-extension FeedVC {
-    private func addObserver() {
-        NotificationCenter.default.addObserver(self, selector: #selector(setContentImg), name: NSNotification.Name("completeBtnDidTap"), object: nil)
-    }
-    
-    @objc func setContentImg(_ notification: Notification) {
-        if let receivedImg = notification.object as? UIImage {
-            self.contentImgView.image = receivedImg
         }
     }
 }
