@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PostTVC: BaseTVC {
     
@@ -16,7 +17,7 @@ class PostTVC: BaseTVC {
     @IBOutlet weak var imgCV: UICollectionView!
     
     // MARK: Properties
-    var imgList: [ImgDataModel] = []
+    var imgList: [Image] = []
     
     // MARK: Life Cycle
     override func awakeFromNib() {
@@ -27,11 +28,13 @@ class PostTVC: BaseTVC {
 
 // MARK: - Custom Methods
 extension PostTVC {
-    func setData(_ postData: PostDataModel) {
-        profileImgView.image = postData.profileImg
+    func setData(_ postData: MainImagesGetResModel) {
+        guard let imageUrl = URL(string: postData.profileImage) else { return }
+        profileImgView.image = UIImage()
+        profileImgView.kf.setImage(with: imageUrl)
         titleLabel.text = postData.title
         descriptionLabel.text = postData.description
-        imgList = postData.imgList
+        imgList = postData.images
     }
     
     private func setImgCV() {
