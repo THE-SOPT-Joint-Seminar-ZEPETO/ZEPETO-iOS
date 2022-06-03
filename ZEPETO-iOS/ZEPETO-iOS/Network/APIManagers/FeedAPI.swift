@@ -19,6 +19,22 @@ class FeedAPI: BaseAPI {
     
     private override init() { }
     
+    /// [GET] 피드 조회
+    func feedGetAPI(completion: @escaping (NetworkResult<Any>) -> (Void)) {
+        AFmanager.request(FeedService.getFeed).responseData { response in
+            switch response.result {
+            case .success:
+                guard let statusCode = response.response?.statusCode else { return }
+                guard let data = response.data else { return }
+                let networkResult = self.judgeStatus(by: statusCode, data, FeedGetResModel.self)
+                completion(networkResult)
+                
+            case .failure(let err):
+                print(err.localizedDescription)
+            }
+        }
+    }
+    
     /// [POST] 게시글 작성
     func createPostAPI(content: String, image: UIImage, completion: @escaping (NetworkResult<Any>) -> (Void)) {
         AFmanager.upload(

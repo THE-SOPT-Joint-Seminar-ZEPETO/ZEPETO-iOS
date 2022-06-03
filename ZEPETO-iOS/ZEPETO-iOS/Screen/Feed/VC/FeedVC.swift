@@ -21,6 +21,7 @@ class FeedVC: BaseVC {
         super.viewDidLoad()
         configUI()
         configMainTextLabelShort()
+        getFeed()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -69,6 +70,28 @@ extension FeedVC {
         let lineCount = mainContentLabel.maxNumberOfLines
         if lineCount <= 2 {
             moreBtn.isHidden = true
+        }
+    }
+}
+
+// MARK: - Network
+extension FeedVC {
+    private func getFeed() {
+        FeedAPI.shared.feedGetAPI() { networkResult in
+            switch networkResult {
+            case .success(let res):
+                if let data = res as? FeedGetResModel {
+                    self.profileImgView.load(url: URL(string: data.userProfileImage)!)
+                    self.userNameLabel.text = data.userName
+                    self.contentImgView.load(url: URL(string: data.image)!)
+                    self.mainContentLabel.text = data.content ?? "작성한 글이 없습니다."
+                    self.hideMoreBtn()
+                }
+            case .requestErr(let res):
+                print(res)
+            default:
+                print("networkFail")
+            }
         }
     }
 }
