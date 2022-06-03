@@ -14,34 +14,34 @@ import Alamofire
  */
 
 enum MainService {
-    case imagesGet
+    case getImages
 }
 
 extension MainService: TargetType {
     var method: HTTPMethod {
         switch self {
-        case .imagesGet:
+        case .getImages:
             return .get
         }
     }
     
     var path: String {
         switch self {
-        case .imagesGet:
+        case .getImages:
             return "/images"
         }
     }
     
     var parameters: RequestParams {
         switch self {
-        case .imagesGet:
+        case .getImages:
             return .requestPlain
         }
     }
     
     var header: HeaderType {
         switch self {
-        case .imagesGet:
+        case .getImages:
             return .basic
         }
     }

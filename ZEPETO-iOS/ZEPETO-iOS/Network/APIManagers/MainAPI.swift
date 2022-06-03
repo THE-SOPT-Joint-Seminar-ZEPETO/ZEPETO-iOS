@@ -21,7 +21,7 @@ class MainAPI: BaseAPI {
 
     /// [GET] 메인 이미지 조회
     func imagesGetAPI(completion: @escaping (NetworkResult<Any>) -> (Void)) {
-        AFmanager.request(MainService.imagesGet).responseData { response in
+        AFmanager.request(MainService.getImages).responseData { response in
             switch response.result {
             case .success:
                 guard let statusCode = response.response?.statusCode else { return }
