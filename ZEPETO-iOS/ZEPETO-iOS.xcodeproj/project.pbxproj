@@ -59,12 +59,13 @@
 		77CC82CC2847CCBE0027CB71 /* CreatePostResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CC82CB2847CCBD0027CB71 /* CreatePostResModel.swift */; };
 		842AB66C2832C8D4002D9406 /* PostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB66A2832C8D4002D9406 /* PostTVC.swift */; };
 		842AB66D2832C8D4002D9406 /* PostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842AB66B2832C8D4002D9406 /* PostTVC.xib */; };
-		842AB6712832CDC5002D9406 /* PostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB6702832CDC5002D9406 /* PostDataModel.swift */; };
+		8495CB60284863CF002B9F19 /* MainImagesGetResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495CB5F284863CF002B9F19 /* MainImagesGetResModel.swift */; };
+		8495CB6228486545002B9F19 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495CB6128486545002B9F19 /* MainService.swift */; };
+		8495CB6428486BE0002B9F19 /* MainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495CB6328486BE0002B9F19 /* MainAPI.swift */; };
 		84CB14832832DA930028A17F /* ImgCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB14812832DA930028A17F /* ImgCVC.swift */; };
 		84CB14842832DA930028A17F /* ImgCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CB14822832DA930028A17F /* ImgCVC.xib */; };
 		84CB148928334C2D0028A17F /* CategoryCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB148728334C2D0028A17F /* CategoryCVC.swift */; };
 		84CB148A28334C2D0028A17F /* CategoryCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CB148828334C2D0028A17F /* CategoryCVC.xib */; };
-		84CB148E28352B190028A17F /* ImgDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB148D28352B190028A17F /* ImgDataModel.swift */; };
 		84DB19632836434600F15BF3 /* CreateEditSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DB19622836434600F15BF3 /* CreateEditSB.storyboard */; };
 		84DB19652836435C00F15BF3 /* CreateEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB19642836435C00F15BF3 /* CreateEditVC.swift */; };
 		89CFF3AFF7880FE9E6B68D80 /* Pods_ZEPETO_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4574688DFF3444344566FA9D /* Pods_ZEPETO_iOS.framework */; };
@@ -127,12 +128,13 @@
 		77CC82CB2847CCBD0027CB71 /* CreatePostResModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostResModel.swift; sourceTree = "<group>"; };
 		842AB66A2832C8D4002D9406 /* PostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
 		842AB66B2832C8D4002D9406 /* PostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTVC.xib; sourceTree = "<group>"; };
-		842AB6702832CDC5002D9406 /* PostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModel.swift; sourceTree = "<group>"; };
+		8495CB5F284863CF002B9F19 /* MainImagesGetResModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImagesGetResModel.swift; sourceTree = "<group>"; };
+		8495CB6128486545002B9F19 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		8495CB6328486BE0002B9F19 /* MainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAPI.swift; sourceTree = "<group>"; };
 		84CB14812832DA930028A17F /* ImgCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgCVC.swift; sourceTree = "<group>"; };
 		84CB14822832DA930028A17F /* ImgCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgCVC.xib; sourceTree = "<group>"; };
 		84CB148728334C2D0028A17F /* CategoryCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVC.swift; sourceTree = "<group>"; };
 		84CB148828334C2D0028A17F /* CategoryCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCVC.xib; sourceTree = "<group>"; };
-		84CB148D28352B190028A17F /* ImgDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgDataModel.swift; sourceTree = "<group>"; };
 		84DB19622836434600F15BF3 /* CreateEditSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateEditSB.storyboard; sourceTree = "<group>"; };
 		84DB19642836435C00F15BF3 /* CreateEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditVC.swift; sourceTree = "<group>"; };
 		A1BF2D29D811C0799B44ECBC /* Pods-ZEPETO-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZEPETO-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ZEPETO-iOS/Pods-ZEPETO-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -244,8 +246,6 @@
 		774BF67D2832437000AA71F1 /* AppModel */ = {
 			isa = PBXGroup;
 			children = (
-				84CB148D28352B190028A17F /* ImgDataModel.swift */,
-				842AB6702832CDC5002D9406 /* PostDataModel.swift */,
 			);
 			path = AppModel;
 			sourceTree = "<group>";
@@ -497,6 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				77CC82CB2847CCBD0027CB71 /* CreatePostResModel.swift */,
+				8495CB5F284863CF002B9F19 /* MainImagesGetResModel.swift */,
 			);
 			path = APIModels;
 			sourceTree = "<group>";
@@ -506,6 +507,7 @@
 			children = (
 				77CC82C52845AFEE0027CB71 /* BaseAPI.swift */,
 				77CC82C92845B72C0027CB71 /* FeedAPI.swift */,
+				8495CB6328486BE0002B9F19 /* MainAPI.swift */,
 			);
 			path = APIManagers;
 			sourceTree = "<group>";
@@ -514,6 +516,7 @@
 			isa = PBXGroup;
 			children = (
 				77CC82C72845B6AA0027CB71 /* FeedService.swift */,
+				8495CB6128486545002B9F19 /* MainService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -716,11 +719,12 @@
 			files = (
 				77CC82C22845AA4C0027CB71 /* NetworkConstants.swift in Sources */,
 				84DB19652836435C00F15BF3 /* CreateEditVC.swift in Sources */,
+				8495CB6228486545002B9F19 /* MainService.swift in Sources */,
 				774BF6DF28326E0300AA71F1 /* CreateNC.swift in Sources */,
 				774BF6E128326E3900AA71F1 /* FeedNC.swift in Sources */,
 				774BF68A2832448A00AA71F1 /* CVRegisterable.swift in Sources */,
-				842AB6712832CDC5002D9406 /* PostDataModel.swift in Sources */,
 				84CB14832832DA930028A17F /* ImgCVC.swift in Sources */,
+				8495CB6428486BE0002B9F19 /* MainAPI.swift in Sources */,
 				77CC82C42845AA9D0027CB71 /* GenericResponse.swift in Sources */,
 				774BF6C62832528F00AA71F1 /* TypeOfViewController.swift in Sources */,
 				774BF6ED2832777C00AA71F1 /* UITabBar+.swift in Sources */,
@@ -737,7 +741,6 @@
 				774BF69B2832478200AA71F1 /* UITextView+.swift in Sources */,
 				774BF68F2832451000AA71F1 /* UIView+.swift in Sources */,
 				774BF66728323FDC00AA71F1 /* SceneDelegate.swift in Sources */,
-				84CB148E28352B190028A17F /* ImgDataModel.swift in Sources */,
 				774BF69D283247CD00AA71F1 /* Adjusted+.swift in Sources */,
 				774BF6952832466E00AA71F1 /* UIButton+.swift in Sources */,
 				774BF68D283244D600AA71F1 /* UIViewController+.swift in Sources */,
@@ -761,6 +764,7 @@
 				774BF6D528325B9D00AA71F1 /* HomeNC.swift in Sources */,
 				774BF6DD28326D9600AA71F1 /* PlanetVC.swift in Sources */,
 				77CC82C82845B6AA0027CB71 /* FeedService.swift in Sources */,
+				8495CB60284863CF002B9F19 /* MainImagesGetResModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,7 +904,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z429BM88YZ;
+				DEVELOPMENT_TEAM = L9D5M5DM3Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ZEPETO-iOS/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -928,7 +932,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Z429BM88YZ;
+				DEVELOPMENT_TEAM = L9D5M5DM3Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ZEPETO-iOS/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
