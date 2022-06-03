@@ -81,15 +81,10 @@ extension FeedVC {
             switch networkResult {
             case .success(let res):
                 if let data = res as? FeedGetResModel {
-                    let profileImageURL = URL(string: data.userProfileImage)
-                    self.profileImgView.load(url: profileImageURL!)
-                    let userName = data.userName
-                    self.userNameLabel.text = userName
-                    let contentImageURL = URL(string: data.image)
-                    self.contentImgView.load(url: contentImageURL!)
-                    if let content = data.content {
-                        self.mainContentLabel.text = content
-                    }
+                    self.profileImgView.load(url: URL(string: data.userProfileImage)!)
+                    self.userNameLabel.text = data.userName
+                    self.contentImgView.load(url: URL(string: data.image)!)
+                    self.mainContentLabel.text = data.content ?? "작성한 글이 없습니다."
                     self.hideMoreBtn()
                 }
             case .requestErr(let res):
