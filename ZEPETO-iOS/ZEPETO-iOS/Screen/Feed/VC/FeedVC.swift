@@ -69,8 +69,6 @@ extension FeedVC {
     /// mainTextLabel이 2줄 이하일 때 더보기 버튼을 숨기는 메서드
     private func hideMoreBtn() {
         let lineCount = mainContentLabel.maxNumberOfLines
-        print("-----lineCount-----")
-        print(lineCount)
         if lineCount <= 2 {
             moreBtn.isHidden = true
         }
