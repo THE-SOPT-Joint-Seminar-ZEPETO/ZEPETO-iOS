@@ -228,7 +228,7 @@
 				77CC82B62845A3BB0027CB71 /* Bases */,
 				77CC82B72845A3CE0027CB71 /* APIEssentials */,
 				77CC82BA2845A4040027CB71 /* Services */,
-				8495CB5E284863B8002B9F19 /* APIModels */,
+				77CC82B82845A3E40027CB71 /* APIModels */,
 				77CC82B92845A3F40027CB71 /* APIManagers */,
 				77CC82BF2845A9C50027CB71 /* EventLogger.swift */,
 			);
@@ -497,6 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				77CC82CB2847CCBD0027CB71 /* CreatePostResModel.swift */,
+				8495CB5F284863CF002B9F19 /* MainImagesGetResModel.swift */,
 			);
 			path = APIModels;
 			sourceTree = "<group>";
@@ -536,14 +537,6 @@
 				842AB66B2832C8D4002D9406 /* PostTVC.xib */,
 			);
 			path = TVC;
-			sourceTree = "<group>";
-		};
-		8495CB5E284863B8002B9F19 /* APIModels */ = {
-			isa = PBXGroup;
-			children = (
-				8495CB5F284863CF002B9F19 /* MainImagesGetResModel.swift */,
-			);
-			path = APIModels;
 			sourceTree = "<group>";
 		};
 		84CB14802832DA810028A17F /* CVC */ = {
