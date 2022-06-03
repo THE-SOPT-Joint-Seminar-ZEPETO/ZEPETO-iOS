@@ -26,7 +26,6 @@ class MainAPI: BaseAPI {
             case .success:
                 guard let statusCode = response.response?.statusCode else { return }
                 guard let data = response.data else { return }
-                print(data)
                 let networkResult = self.judgeStatus(by: statusCode, data, [MainImagesGetResModel].self)
                 completion(networkResult)
                 
