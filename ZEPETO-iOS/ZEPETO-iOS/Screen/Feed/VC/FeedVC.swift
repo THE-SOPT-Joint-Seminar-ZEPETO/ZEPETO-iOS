@@ -23,9 +23,10 @@ class FeedVC: BaseVC {
         configMainTextLabelShort()
         getFeed()
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getFeed()
         hideMoreBtn()
     }
     
@@ -85,7 +86,6 @@ extension FeedVC {
                     self.userNameLabel.text = data.userName
                     self.contentImgView.load(url: URL(string: data.image)!)
                     self.mainContentLabel.text = data.content ?? "작성한 글이 없습니다."
-                    self.hideMoreBtn()
                 }
             case .requestErr(let res):
                 print(res)
