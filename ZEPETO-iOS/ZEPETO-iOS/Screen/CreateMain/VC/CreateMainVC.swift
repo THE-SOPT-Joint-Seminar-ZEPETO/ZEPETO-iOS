@@ -24,9 +24,7 @@ class CreateMainVC: BaseVC {
         setPostTV()
         setCategoryCV()
         setImagePicker()
-        
-        /// 이미지 데이터 조회 서버 통신
-        imagesGet()
+        getImages()
     }
     
     // MARK: IBAction
@@ -142,7 +140,7 @@ extension CreateMainVC : UIImagePickerControllerDelegate, UINavigationController
 
 // MARK: - Network
 extension CreateMainVC {
-    private func imagesGet() {
+    private func getImages() {
         MainAPI.shared.imagesGetAPI() { networkResult in
             switch networkResult {
             case .success(let res):
