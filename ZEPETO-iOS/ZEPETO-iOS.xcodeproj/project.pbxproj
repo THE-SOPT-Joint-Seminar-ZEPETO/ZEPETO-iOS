@@ -188,7 +188,6 @@
 		774BF6782832416300AA71F1 /* Global */ = {
 			isa = PBXGroup;
 			children = (
-				774BF67C2832436300AA71F1 /* PublicData */,
 				774BF6C42832526F00AA71F1 /* Factory */,
 				774BF6802832439F00AA71F1 /* Class */,
 				774BF681283243B300AA71F1 /* Struct */,
@@ -237,21 +236,6 @@
 				77CC82BF2845A9C50027CB71 /* EventLogger.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		774BF67C2832436300AA71F1 /* PublicData */ = {
-			isa = PBXGroup;
-			children = (
-				774BF67D2832437000AA71F1 /* AppModel */,
-			);
-			path = PublicData;
-			sourceTree = "<group>";
-		};
-		774BF67D2832437000AA71F1 /* AppModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppModel;
 			sourceTree = "<group>";
 		};
 		774BF6802832439F00AA71F1 /* Class */ = {
