@@ -22,7 +22,7 @@ extension FeedService: TargetType {
     
     var path: String {
         switch self {
-        case .uploadPost:
+        case .getFeed, .uploadPost:
             return "/feed"
         }
     }
@@ -40,7 +40,7 @@ extension FeedService: TargetType {
     var header: HeaderType {
         switch self {
         case .getFeed:
-            return "/feed"
+            return .basic
         case .uploadPost:
             return .multiPart
         }
@@ -48,8 +48,6 @@ extension FeedService: TargetType {
     
     var multipart: MultipartFormData {
         switch self {
-        case .getFeed:
-            return .requestPlain
         case .uploadPost(let content, let image):
             let multiPart = MultipartFormData()
             
@@ -60,14 +58,15 @@ extension FeedService: TargetType {
             multiPart.append(imageData, withName: "image", fileName: "postImage.png", mimeType: "image/png")
             
             return multiPart
+            
+        default:
+            return MultipartFormData()
         }
     }
     
     var parameters: RequestParams {
         switch self {
-        case .getFeed:
-            return .basic
-        case .uploadPost:
+        case .getFeed, .uploadPost:
             return .requestPlain
         }
     }
