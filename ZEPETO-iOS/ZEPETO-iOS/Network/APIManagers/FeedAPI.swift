@@ -34,4 +34,25 @@ class FeedAPI: BaseAPI {
             }
         }
     }
+    
+    /// [POST] 게시글 작성
+    func createPostAPI(content: String, image: UIImage, completion: @escaping (NetworkResult<Any>) -> (Void)) {
+        AFmanager.upload(
+            multipartFormData: FeedService.uploadPost(content: content, image: image).multipart,
+            with: FeedService.uploadPost(content: content, image: image)).responseData { response in
+                switch response.result {
+                    
+                case .success:
+                    guard let statusCode = response.response?.statusCode else { return }
+                    guard let data = response.data else { return }
+                    let networkResult = self.judgeStatus(by: statusCode, data, CreatePostResModel.self)
+                    
+                    completion(networkResult)
+                    
+                case .failure(let err):
+                    print(err.localizedDescription)
+                }
+                
+            }
+    }
 }

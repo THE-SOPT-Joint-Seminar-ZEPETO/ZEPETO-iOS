@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ImgCVC: BaseCVC {
 
@@ -20,7 +21,9 @@ class ImgCVC: BaseCVC {
 
 // MARK: - Custom Methods
 extension ImgCVC {
-    func setData(_ imgData: ImgDataModel) {
-        contentImgView.image = imgData.contentImg
+    func setData(_ imgData: Image) {
+        guard let imageUrl = URL(string: imgData.imageURL) else { return }
+        contentImgView.image = UIImage()
+        contentImgView.kf.setImage(with: imageUrl)
     }
 }
