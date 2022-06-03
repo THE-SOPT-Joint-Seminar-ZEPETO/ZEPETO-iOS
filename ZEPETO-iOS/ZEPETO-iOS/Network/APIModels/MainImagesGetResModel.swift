@@ -9,8 +9,7 @@ import Foundation
 
 // MARK: - MainImagesGetResModel
 struct MainImagesGetResModel: Codable {
-    let id, title, description: String
-    let profileImage: String
+    let id, title, description, profileImage: String
     let images: [Image]
 
     enum CodingKeys: String, CodingKey {
