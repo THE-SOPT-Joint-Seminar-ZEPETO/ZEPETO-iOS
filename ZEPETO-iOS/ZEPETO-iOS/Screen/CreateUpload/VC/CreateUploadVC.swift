@@ -31,9 +31,7 @@ class CreateUploadVC: BaseVC {
     }
     
     @IBAction func tapCompleteBtn(_ sender: UIButton) {
-        NotificationCenter.default.post(name: NSNotification.Name("completeBtnDidTap"), object: contentImgView.image, userInfo: nil)
-        
-        self.dismiss(animated: true, completion: nil)
+        createPost(content: mainTextView.text ?? "", image: selectedImg)
     }
 }
 
@@ -73,6 +71,24 @@ extension CreateUploadVC: UITextViewDelegate {
         if textView.text.isEmpty {
             textView.text = "이야기를 완성하세요"
             textView.textColor = .gray300
+        }
+    }
+}
+
+// MARK: - Network
+extension CreateUploadVC {
+    private func createPost(content: String, image: UIImage) {
+        FeedAPI.shared.createPostAPI(content: content, image: image) { networkResult in
+            switch networkResult {
+            case .success:
+                NotificationCenter.default.post(name: NSNotification.Name("completeBtnDidTap"), object: nil, userInfo: nil)
+                self.dismiss(animated: true, completion: nil)
+            case .requestErr(let res):
+                print(res)
+            default:
+                print("networkFail")
+            }
+            
         }
     }
 }
