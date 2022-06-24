@@ -57,6 +57,8 @@
 		77CC82C82845B6AA0027CB71 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CC82C72845B6AA0027CB71 /* FeedService.swift */; };
 		77CC82CA2845B72C0027CB71 /* FeedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CC82C92845B72C0027CB71 /* FeedAPI.swift */; };
 		77CC82CC2847CCBE0027CB71 /* CreatePostResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CC82CB2847CCBD0027CB71 /* CreatePostResModel.swift */; };
+		77CC82CE28635EE10027CB71 /* loading_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CC82CD28635EE10027CB71 /* loading_lottie.json */; };
+		77CC82D02865C0A80027CB71 /* check_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CC82CF2865C0A80027CB71 /* check_lottie.json */; };
 		842AB66C2832C8D4002D9406 /* PostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AB66A2832C8D4002D9406 /* PostTVC.swift */; };
 		842AB66D2832C8D4002D9406 /* PostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842AB66B2832C8D4002D9406 /* PostTVC.xib */; };
 		8495CB60284863CF002B9F19 /* MainImagesGetResModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495CB5F284863CF002B9F19 /* MainImagesGetResModel.swift */; };
@@ -128,6 +130,8 @@
 		77CC82C72845B6AA0027CB71 /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 		77CC82C92845B72C0027CB71 /* FeedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPI.swift; sourceTree = "<group>"; };
 		77CC82CB2847CCBD0027CB71 /* CreatePostResModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostResModel.swift; sourceTree = "<group>"; };
+		77CC82CD28635EE10027CB71 /* loading_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_lottie.json; sourceTree = "<group>"; };
+		77CC82CF2865C0A80027CB71 /* check_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = check_lottie.json; sourceTree = "<group>"; };
 		842AB66A2832C8D4002D9406 /* PostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTVC.swift; sourceTree = "<group>"; };
 		842AB66B2832C8D4002D9406 /* PostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTVC.xib; sourceTree = "<group>"; };
 		8495CB5F284863CF002B9F19 /* MainImagesGetResModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImagesGetResModel.swift; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 				774BF67228323FDD00AA71F1 /* Info.plist */,
 				774BF66D28323FDD00AA71F1 /* Assets.xcassets */,
 				774BF6A02832498100AA71F1 /* Colorsets.xcassets */,
+				77CC82CD28635EE10027CB71 /* loading_lottie.json */,
+				77CC82CF2865C0A80027CB71 /* check_lottie.json */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -645,12 +651,14 @@
 				774BF6D928325C4800AA71F1 /* PlanetSB.storyboard in Resources */,
 				842AB66D2832C8D4002D9406 /* PostTVC.xib in Resources */,
 				774BF6A12832498100AA71F1 /* Colorsets.xcassets in Resources */,
+				77CC82CE28635EE10027CB71 /* loading_lottie.json in Resources */,
 				84CB14842832DA930028A17F /* ImgCVC.xib in Resources */,
 				774BF67128323FDD00AA71F1 /* LaunchScreen.storyboard in Resources */,
 				774BF66E28323FDD00AA71F1 /* Assets.xcassets in Resources */,
 				84CB148A28334C2D0028A17F /* CategoryCVC.xib in Resources */,
 				774BF6BD2832509F00AA71F1 /* CreateUploadSB.storyboard in Resources */,
 				84DB19632836434600F15BF3 /* CreateEditSB.storyboard in Resources */,
+				77CC82D02865C0A80027CB71 /* check_lottie.json in Resources */,
 				774BF6E528326E8100AA71F1 /* MypageSB.storyboard in Resources */,
 				774BF6A928324F5000AA71F1 /* CreateMainSB.storyboard in Resources */,
 				774BF6D128325B2B00AA71F1 /* HomeSB.storyboard in Resources */,
