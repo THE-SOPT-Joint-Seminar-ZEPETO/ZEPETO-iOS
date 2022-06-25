@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 class CreateUploadVC: BaseVC {
     
@@ -23,6 +24,7 @@ class CreateUploadVC: BaseVC {
         super.viewDidLoad()
         configUI()
         setDelegate()
+        setLottie()
     }
     
     // MARK: IBAction
@@ -78,11 +80,13 @@ extension CreateUploadVC: UITextViewDelegate {
 // MARK: - Network
 extension CreateUploadVC {
     private func createPost(content: String, image: UIImage) {
+        loadingPlay()
         FeedAPI.shared.createPostAPI(content: content, image: image) { networkResult in
             switch networkResult {
             case .success:
                 NotificationCenter.default.post(name: NSNotification.Name("completeBtnDidTap"), object: nil, userInfo: nil)
-                self.dismiss(animated: true, completion: nil)
+                self.loadingStop()
+                self.checkPlay(self)
             case .requestErr(let res):
                 print(res)
             default:
