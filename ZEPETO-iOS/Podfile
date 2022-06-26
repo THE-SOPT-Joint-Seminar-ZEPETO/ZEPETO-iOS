@@ -8,6 +8,8 @@ target 'ZEPETO-iOS' do
   # Pods for ZEPETO-iOS
   pod 'Alamofire'
   pod 'Kingfisher'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'Then' 
   pod 'lottie-ios'
 
 end
