@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Lottie
 
 class CreateUploadVC: BaseVC {
     
@@ -92,7 +91,6 @@ extension CreateUploadVC {
             default:
                 print("networkFail")
             }
-            
         }
     }
 }

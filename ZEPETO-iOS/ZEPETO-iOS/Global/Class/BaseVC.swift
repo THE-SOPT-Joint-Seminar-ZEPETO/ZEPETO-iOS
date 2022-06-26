@@ -79,32 +79,32 @@ extension BaseVC {
     }
     
     func loadingPlay() {
-        bgView.isHidden = false
-        containerView.isHidden = false
-        loadingView.isHidden = false
+        [bgView, containerView, loadingView].forEach { view in
+            view.isHidden = false
+        }
         loadingView.play()
     }
     
     func loadingStop() {
         loadingView.stop()
-        bgView.isHidden = true
-        containerView.isHidden = true
-        loadingView.isHidden = true
+        [bgView, containerView, loadingView].forEach { view in
+            view.isHidden = true
+        }
     }
     
     func checkPlay(_ vc: UIViewController) {
-        bgView.isHidden = false
-        containerView.isHidden = false
-        checkView.isHidden = false
+        [bgView, containerView, checkView].forEach { view in
+            view.isHidden = false
+        }
         checkView.play() { _ in
             vc.dismiss(animated: true)
         }
     }
     
     func checkStop() {
-        bgView.isHidden = true
-        containerView.isHidden = true
-        checkView.isHidden = true
+        [bgView, containerView, checkView].forEach { view in
+            view.isHidden = true
+        }
         checkView.stop()
     }
 }
