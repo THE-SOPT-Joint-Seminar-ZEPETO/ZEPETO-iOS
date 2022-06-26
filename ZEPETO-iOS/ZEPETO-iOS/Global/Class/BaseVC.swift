@@ -6,18 +6,65 @@
 //
 
 import UIKit
+import SnapKit
+import Then
 import Lottie
 
 class BaseVC: UIViewController {
 
     // MARK: Properties
-    let loadingView = AnimationView(name: "loading_lottie")
-    let checkView = AnimationView(name: "check_lottie")
+    let bgView = UIView().then {
+        $0.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
+        $0.isHidden = true
+    }
+    
+    let containerView = UIView().then {
+        $0.backgroundColor = .white
+        $0.makeRounded(cornerRadius: 8.adjusted)
+        $0.isHidden = true
+    }
+    
+    lazy var loadingView: AnimationView = {
+        let animationView = AnimationView(name: "loading_lottie")
+        animationView.frame = CGRect(x: 0, y: 0, width: 64, height: 64)
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.isHidden = true
+        
+        return animationView
+    }()
+    
+    lazy var checkView: AnimationView = {
+        let animationView = AnimationView(name: "check_lottie")
+        animationView.frame = CGRect(x: 0, y: 0, width: 64, height: 64)
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .playOnce
+        animationView.isHidden = true
+        
+        return animationView
+    }()
     
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarController?.tabBar.addBorder(.top, color: .gray600, thickness: 0.3)
+    }
+}
+
+// MARK: - UI
+extension BaseVC {
+    func setLottie() {
+        view.addSubviews([bgView, containerView])
+        containerView.addSubviews([loadingView, checkView])
+        
+        bgView.snp.makeConstraints {
+            $0.top.bottom.leading.trailing.equalToSuperview()
+        }
+        
+        containerView.snp.makeConstraints {
+            $0.centerX.centerY.equalToSuperview()
+            $0.width.height.equalTo(64)
+        }
     }
 }
 
@@ -31,33 +78,23 @@ extension BaseVC {
         self.tabBarController?.tabBar.isHidden = false
     }
     
-    func setLottie() {
-        loadingView.frame = CGRect(x: 0, y: 0, width: 64, height: 64)
-        loadingView.center = self.view.center
-        loadingView.contentMode = .scaleAspectFit
-        loadingView.loopMode = .loop
-        loadingView.isHidden = true
-        view.addSubview(loadingView)
-        
-        checkView.frame = CGRect(x: 0, y: 0, width: 64, height: 64)
-        checkView.center = self.view.center
-        checkView.contentMode = .scaleAspectFit
-        checkView.loopMode = .playOnce
-        checkView.isHidden = true
-        view.addSubview(checkView)
-    }
-    
     func loadingPlay() {
+        bgView.isHidden = false
+        containerView.isHidden = false
         loadingView.isHidden = false
         loadingView.play()
     }
     
     func loadingStop() {
         loadingView.stop()
+        bgView.isHidden = true
+        containerView.isHidden = true
         loadingView.isHidden = true
     }
     
     func checkPlay(_ vc: UIViewController) {
+        bgView.isHidden = false
+        containerView.isHidden = false
         checkView.isHidden = false
         checkView.play() { _ in
             vc.dismiss(animated: true)
@@ -65,7 +102,9 @@ extension BaseVC {
     }
     
     func checkStop() {
-        checkView.stop()
+        bgView.isHidden = true
+        containerView.isHidden = true
         checkView.isHidden = true
+        checkView.stop()
     }
 }
