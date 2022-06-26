@@ -17,6 +17,11 @@ extension UIView {
         NSStringFromClass(self.classForCoder).components(separatedBy: ".").last!
     }
     
+    /// 다수의 뷰를 한번에 addSubview해주는 메서드
+    func addSubviews(_ views: [UIView]) {
+        views.forEach { self.addSubview($0) }
+    }
+    
     /// UIView 의 모서리가 둥근 정도를 설정하는 메서드
     func makeRounded(cornerRadius : CGFloat?) {
         if let cornerRadius_ = cornerRadius {
